@@ -5,8 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "build": "vite build && npm run postBuild",
+    "preview": "vite preview",
+    "postBuild": "copy .htaccess dist"
   },
   "dependencies": {
     "react": "^18.2.0",

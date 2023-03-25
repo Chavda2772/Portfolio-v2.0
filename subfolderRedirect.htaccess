@@ -1,9 +1,9 @@
 RewriteEngine on
   
 RewriteCond %{HTTP_HOST} ^(www.)?v2.chavdamahesh.com$
-RewriteCond %{REQUEST_URI} !^/
+RewriteCond %{REQUEST_URI} !^/dist/
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /$1
+RewriteRule ^(.*)$ /dist/$1
 RewriteCond %{HTTP_HOST} ^(www.)?v2.chavdamahesh.com$
-RewriteRule ^(/)?$ /index.html [L]
+RewriteRule ^(/)?$ dist/index.html [L]
