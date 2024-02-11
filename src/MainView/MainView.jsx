@@ -1,7 +1,7 @@
 function MainView() {
   return (
     <div>
-      <h1>Main View portfolio</h1>
+      <h1>Main View portfolio version 2.0</h1>
     </div>
   );
 }
