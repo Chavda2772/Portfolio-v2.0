@@ -10,9 +10,11 @@ lerna-debug.log*
 node_modules
 dist-ssr
 *.local
+OnlyLocal
 
 # Editor directories and files
 .vscode/*
+.vs
 !.vscode/extensions.json
 .idea
 .DS_Store

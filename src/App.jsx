@@ -1,12 +1,12 @@
 // Components
-import MainView from './MainView/MainView';
+import MainView from './components/mainView/MainView';
 
 // Styles
 import './App.css';
 
 // Components design
 function App() {
-  return <MainView />;
+    return <MainView />;
 }
 
 export default App;
