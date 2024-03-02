@@ -77,7 +77,7 @@ function Navbar() {
                     </div>
                 </div>
             </nav >
-            <div className={`fixed w-1/3 h-full backdrop-blur-sm ${isMenuVisible ? '' : 'hidden'}`} id="navbar-hamburger">
+            <div className={`fixed w-1/3 h-full backdrop-blur-sm ${isMenuVisible ? '' : 'hidden'} bg-gray-50/30`} id="navbar-hamburger">
                 <div className="inline-flex items-center w-full justify-end h-12">
                     <button onClick={toggleMenu} type="button" className='p-5 mt-2'>
                         <svg className='h-10' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" version="1.1">
@@ -85,18 +85,21 @@ function Navbar() {
                         </svg>
                     </button>
                 </div>
-                <ul className="flex h-full flex-col font-medium justify-evenly rounded-lg bg-gray-50/30 ">
+                <ul className="flex h-full flex-col font-medium justify-evenly rounded-lg">
                     <li>
                         <a href="#" className="block px-3 text-2xl rounded" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#" className="block px-3 text-2xl text-gray-900">Services</a>
+                        <a href="#about" className="block px-3 text-2xl text-gray-900">About</a>
                     </li>
                     <li>
-                        <a href="#" className="block px-3 text-2xl text-gray-900">Pricing</a>
+                        <a href="#skills" className="block px-3 text-2xl text-gray-900">Skills</a>
                     </li>
                     <li>
-                        <a href="#" className="block px-3 text-2xl text-gray-900">Contact</a>
+                        <a href="#projects" className="block px-3 text-2xl text-gray-900">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#contact" className="block px-3 text-2xl text-gray-900">Contact</a>
                     </li>
                 </ul>
             </div>
