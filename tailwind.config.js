@@ -4,6 +4,9 @@ export default {
   darkMode: 'selector',
   theme: {
     extend: {
+      fontSize: {
+        '24rem': '24rem',
+      },
       colors: {
         primary: '#224295',
         secondary: '#1F234A',
