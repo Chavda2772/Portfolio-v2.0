@@ -4,6 +4,10 @@ export default {
   darkMode: 'selector',
   theme: {
     extend: {
+      borderWidth: {
+        15: '15px',
+        30: '30px',
+      },
       fontSize: {
         '24rem': '24rem',
       },
@@ -16,4 +20,3 @@ export default {
   },
   plugins: [],
 };
-
