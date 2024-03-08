@@ -39,7 +39,7 @@ function Navbar() {
     // Element
     return (
         <>
-            <nav className="fixed w-full backdrop-blur-sm bg-white/40 dark:bg-gray-800 rounded-lg">
+            <nav className="fixed w-full backdrop-blur-sm bg-white/40 dark:bg-gray-800 rounded-lg z-20">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
                     <button onClick={toggleMenu} data-collapse-toggle="navbar-hamburger" type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-black rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
@@ -85,9 +85,9 @@ function Navbar() {
                     </div>
                 </div>
             </nav >
-            <div className={`fixed w-1/3 h-full backdrop-blur-sm ${isMenuVisible ? '' : 'hidden'} bg-gray-50/30`} id="navbar-hamburger">
-                <div className="inline-flex items-center w-full justify-end h-12">
-                    <button onClick={toggleMenu} type="button" className='p-5 mt-2'>
+            <div className={`fixed w-full h-full backdrop-blur-sm bg-gray-50/60 z-30  ${isMenuVisible ? '' : 'hidden'}`} id="navbar-hamburger">
+                <div className="inline-flex items-center justify-end h-12">
+                    <button onClick={toggleMenu} type="button" className='pl-12 pt-6'>
                         <svg className='h-10 fill-black dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" version="1.1">
                             <path d="M 43.46875 39.28125 L 39.273438 43.46875 C 38.507813 44.242188 37.257813 44.242188 36.484375 43.46875 L 26 32.992188 L 15.523438 43.46875 C 14.75 44.242188 13.492188 44.242188 12.726563 43.46875 L 8.53125 39.28125 C 7.757813 38.507813 7.757813 37.257813 8.53125 36.484375 L 19.007813 26 L 8.53125 15.523438 C 7.765625 14.742188 7.765625 13.484375 8.53125 12.726563 L 12.726563 8.53125 C 13.492188 7.757813 14.75 7.757813 15.523438 8.53125 L 26 19.015625 L 36.484375 8.53125 C 37.257813 7.757813 38.515625 7.757813 39.273438 8.53125 L 43.46875 12.71875 C 44.242188 13.492188 44.242188 14.75 43.476563 15.523438 L 32.992188 26 L 43.46875 36.484375 C 44.242188 37.257813 44.242188 38.507813 43.46875 39.28125 Z " />
                         </svg>
@@ -95,18 +95,18 @@ function Navbar() {
                 </div>
                 <ul className="flex h-full flex-col font-medium justify-evenly rounded-lg">
                     <li>
-                        <a href="#" className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary" aria-current="page">Home</a>
+                        <a href="#" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#about" className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">About</a>                    </li>
+                        <a href="#about" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">About</a>                    </li>
                     <li>
-                        <a href="#skills" className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">Skills</a>
+                        <a href="#skills" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">Skills</a>
                     </li>
                     <li>
-                        <a href="#projects" className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">Projects</a>
+                        <a href="#projects" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">Projects</a>
                     </li>
                     <li>
-                        <a href="#contact" className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary mb-10">Contact</a>
+                        <a href="#contact" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary mb-10">Contact</a>
                     </li>
                 </ul>
             </div>
