@@ -6,7 +6,7 @@ function Skills() {
     <div id='skills' className="flex w-full min-h-dvh justify-center bg-purple-300 items-center dark:bg-purple-900">
       <div className='w-1/3 h-dvh p-4 relative flex items-start justify-center flex-col'>
         <div className="h-2/3 bg-red-400 w-1 ml-1 absolute rounded-md"></div>
-        <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-red-500 before:rounded-full pl-0 p-3 text-3xl dark:text-white'>Frontend</p>
+        <p className='before:inline-block before:w-5 before:h-5 before:-ml-1 before:mr-5 before:bg-red-500 before:rounded-full pl-0 p-3 text-3xl dark:text-white'>Frontend</p>
         <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-red-500 before:rounded-full pl-0 p-3 text-xl dark:text-white'>Backend</p>
         <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-red-500 before:rounded-full pl-0 p-3 text-xl dark:text-white'>Database</p>
         <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-red-500 before:rounded-full pl-0 p-3 text-xl dark:text-white'>Tools</p>
