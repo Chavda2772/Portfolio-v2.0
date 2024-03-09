@@ -16,22 +16,26 @@ function Projects() {
   ];
 
   return (
-    <div id='projects' className="w-full min-h-dvh bg-blue-300 dark:bg-blue-900 ">
-      {/* Projects */}
-      <div className='flex flex-col items-center w-full'>
-        {
-          projectList.map((project, idx) => {
-            return <Project
-              key={idx}
-              id={idx + 1}
-              isInverse={idx % 2 == 0}
-              name={project.name}
-              discription={project.discription}
-            />
-          })
-        }
-        {/* <Project />
+    <div id='projects' className='relative'>
+      <div className="h-full bg-secondary w-1 ml-16 absolute"></div>
+      <p className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 dark:text-white'>Projects</p>
+      <div className="w-full min-h-dvh bg-primary dark:bg-blue-900 ">
+        {/* Projects */}
+        <div className='flex flex-col items-center w-full'>
+          {
+            projectList.map((project, idx) => {
+              return <Project
+                key={idx}
+                id={idx + 1}
+                isInverse={idx % 2 == 1}
+                name={project.name}
+                discription={project.discription}
+              />
+            })
+          }
+          {/* <Project />
         <Project isInverse={true} /> */}
+        </div>
       </div>
     </div>
   );

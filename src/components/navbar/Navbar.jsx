@@ -39,15 +39,11 @@ function Navbar() {
     // Element
     return (
         <>
-            <nav className="fixed w-full backdrop-blur-sm bg-white/40 dark:bg-gray-800 rounded-lg z-20">
+            <nav className="fixed w-full backdrop-blur-sm bg-secondary/35 dark:bg-gray-800 rounded-b-xl z-20">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <button onClick={toggleMenu} data-collapse-toggle="navbar-hamburger" type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-black rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
-                            <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
-                        </svg>
-                    </button>
                     <a href='#' className="ml-14">
-                        <svg className='fill-black dark:fill-white'
+                        {/* Logo */}
+                        <svg className='fill-secondary dark:fill-white'
                             height="40"
                             width="40"
                             xmlns="http://www.w3.org/2000/svg"
@@ -61,7 +57,7 @@ function Navbar() {
                         <button onClick={onChangeMode} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
                             {!isDark
                                 // Moon
-                                ? < svg className='fill-black dark:fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1">
+                                ? < svg className='fill-secondary dark:fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1">
                                     <path d="M 16 0 L 14.375 4.375 L 10 6 L 14.375 7.625 L 16 12 L 17.625 7.625 L 22 6 L 17.625 4.375 Z M 6 12 L 4.375 16.375 L 0 18 L 4.375 19.625 L 6 24 L 7.625 19.625 L 12 18 L 7.625 16.375 Z M 30 12 C 20.109375 12 12 20.109375 12 30 C 12 39.890625 20.109375 48 30 48 C 39.414063 48 47.101563 40.8125 48 31.625 L 48.25 28.6875 L 45.4375 29.5 C 44.15625 29.867188 43.210938 30 42 30 C 36.492188 30 32 25.507813 32 20 C 32 18.164063 32.515625 16.546875 33.375 15 L 35 12 Z M 29 16.1875 C 28.625 17.445313 28 18.609375 28 20 C 28 27.6875 34.3125 34 42 34 C 42.4375 34 42.835938 33.851563 43.25 33.8125 C 41.515625 39.664063 36.429688 44 30 44 C 22.289063 44 16 37.710938 16 30 C 16 22.640625 21.78125 16.726563 29 16.1875 Z " />
                                 </svg>
                                 // Sun
@@ -71,42 +67,49 @@ function Navbar() {
                             }
                         </button>
                         <button onClick={onVolumeModeChange} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                            {isMute
-                                // Mute Icon
-                                ? <svg className='fill-black dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="20" viewBox="0 0 52 52" version="1.1">
-                                    <path d="M 1.8125 -0.0625 C 1.726563 -0.046875 1.640625 -0.0234375 1.5625 0 C 0.8125 0.132813 0.210938 0.679688 0 1.40625 C -0.210938 2.140625 0.0078125 2.921875 0.5625 3.4375 L 48.5625 51.4375 C 49.359375 52.234375 50.640625 52.234375 51.4375 51.4375 C 52.234375 50.640625 52.234375 49.359375 51.4375 48.5625 L 45.0625 42.1875 C 49.453125 38.132813 52.1875 32.421875 52.1875 26.1875 C 52.1875 17.789063 47.601563 10.421875 40 6.625 C 39 6.226563 37.773438 6.578125 37.375 7.375 C 36.773438 8.171875 37.203125 9.398438 38 10 C 44.203125 13 48 19.203125 48 26 C 48 31.234375 45.796875 35.921875 42.125 39.25 L 39.5625 36.625 C 42.203125 33.703125 43.8125 29.859375 43.8125 25.8125 C 43.8125 20.015625 40.578125 14.609375 35.375 11.8125 C 34.375 11.210938 33.226563 11.625 32.625 12.625 C 32.421875 13.625 32.828125 14.976563 33.625 15.375 C 37.625 17.578125 40 21.601563 40 26 C 40 29.039063 38.835938 31.867188 36.875 34 L 34.0625 31.1875 C 35.296875 29.804688 36 28.015625 36 26 C 36 22.398438 33.601563 19.1875 30 18.1875 C 29 17.984375 27.828125 18.625 27.625 19.625 C 27.421875 20.828125 28 21.789063 29 22.1875 C 30.796875 22.585938 32 24.203125 32 26 C 32 26.867188 31.742188 27.710938 31.25 28.375 L 26 23.125 L 26 6.625 C 26 4.023438 23.796875 3.390625 22 5.1875 L 14.9375 12.0625 L 3.4375 0.5625 C 3.023438 0.117188 2.421875 -0.109375 1.8125 -0.0625 Z M 9.375 17.625 L 8.8125 18 L 2 18 C 0.796875 18 0 18.796875 0 20 L 0 32 C 0 33.203125 0.796875 34 2 34 L 8.8125 34 L 21.8125 46.8125 C 23.8125 48.8125 25.8125 47.796875 25.8125 45 L 25.8125 34.1875 Z " />
-                                </svg>
+                            {!isMute
                                 // Volumte Icon
-                                : <svg className='fill-black dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1">
+                                ? <svg className='fill-secondary dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1">
                                     <path d="M 24 6 L 12 18 L 4 18 L 4 30 L 12 30 L 24 42 Z M 28 6.1875 L 28 10.1875 C 34.375 11.125 39.34375 16.28125 39.9375 22.6875 C 39.976563 23.117188 40 23.5625 40 24 C 40 31 34.796875 36.8125 28 37.8125 L 28 41.8125 C 37 40.8125 44 33.203125 44 24 C 44 14.796875 37 7.1875 28 6.1875 Z M 28 14.1875 L 28 18.375 C 30.398438 19.171875 32 21.398438 32 24 C 32 26.601563 30.398438 28.828125 28 29.625 L 28 33.8125 C 32.601563 32.8125 36 28.796875 36 24 C 36 19.203125 32.601563 15.1875 28 14.1875 Z " />
                                 </svg>
+                                // Mute Icon
+                                : <svg className='fill-secondary dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="20" viewBox="0 0 52 52" version="1.1">
+                                    <path d="M 1.8125 -0.0625 C 1.726563 -0.046875 1.640625 -0.0234375 1.5625 0 C 0.8125 0.132813 0.210938 0.679688 0 1.40625 C -0.210938 2.140625 0.0078125 2.921875 0.5625 3.4375 L 48.5625 51.4375 C 49.359375 52.234375 50.640625 52.234375 51.4375 51.4375 C 52.234375 50.640625 52.234375 49.359375 51.4375 48.5625 L 45.0625 42.1875 C 49.453125 38.132813 52.1875 32.421875 52.1875 26.1875 C 52.1875 17.789063 47.601563 10.421875 40 6.625 C 39 6.226563 37.773438 6.578125 37.375 7.375 C 36.773438 8.171875 37.203125 9.398438 38 10 C 44.203125 13 48 19.203125 48 26 C 48 31.234375 45.796875 35.921875 42.125 39.25 L 39.5625 36.625 C 42.203125 33.703125 43.8125 29.859375 43.8125 25.8125 C 43.8125 20.015625 40.578125 14.609375 35.375 11.8125 C 34.375 11.210938 33.226563 11.625 32.625 12.625 C 32.421875 13.625 32.828125 14.976563 33.625 15.375 C 37.625 17.578125 40 21.601563 40 26 C 40 29.039063 38.835938 31.867188 36.875 34 L 34.0625 31.1875 C 35.296875 29.804688 36 28.015625 36 26 C 36 22.398438 33.601563 19.1875 30 18.1875 C 29 17.984375 27.828125 18.625 27.625 19.625 C 27.421875 20.828125 28 21.789063 29 22.1875 C 30.796875 22.585938 32 24.203125 32 26 C 32 26.867188 31.742188 27.710938 31.25 28.375 L 26 23.125 L 26 6.625 C 26 4.023438 23.796875 3.390625 22 5.1875 L 14.9375 12.0625 L 3.4375 0.5625 C 3.023438 0.117188 2.421875 -0.109375 1.8125 -0.0625 Z M 9.375 17.625 L 8.8125 18 L 2 18 C 0.796875 18 0 18.796875 0 20 L 0 32 C 0 33.203125 0.796875 34 2 34 L 8.8125 34 L 21.8125 46.8125 C 23.8125 48.8125 25.8125 47.796875 25.8125 45 L 25.8125 34.1875 Z " />
+                                </svg>
                             }
+                        </button>
+                        {/* Action Menu */}
+                        <button onClick={toggleMenu} data-collapse-toggle="navbar-hamburger" type="button" className="p-2 w-10 h-10 text-secondary focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
+                                <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
+                            </svg>
                         </button>
                     </div>
                 </div>
             </nav >
-            <div className={`fixed w-full h-full backdrop-blur-sm bg-gray-50/60 z-30  ${isMenuVisible ? '' : 'hidden'}`} id="navbar-hamburger">
-                <div className="inline-flex items-center justify-end h-12">
-                    <button onClick={toggleMenu} type="button" className='pl-12 pt-6'>
-                        <svg className='h-10 fill-black dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" version="1.1">
+            <div className={`fixed w-full h-full backdrop-blur-3xl bg-secondary/10 z-30 ${isMenuVisible ? '' : 'hidden'}`} id="navbar-hamburger">
+                <div className="flex items-center justify-end h-12">
+                    <button onClick={toggleMenu} type="button" className='mr-12 mt-5'>
+                        <svg className='h-10 hover:fill-action dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" version="1.1">
                             <path d="M 43.46875 39.28125 L 39.273438 43.46875 C 38.507813 44.242188 37.257813 44.242188 36.484375 43.46875 L 26 32.992188 L 15.523438 43.46875 C 14.75 44.242188 13.492188 44.242188 12.726563 43.46875 L 8.53125 39.28125 C 7.757813 38.507813 7.757813 37.257813 8.53125 36.484375 L 19.007813 26 L 8.53125 15.523438 C 7.765625 14.742188 7.765625 13.484375 8.53125 12.726563 L 12.726563 8.53125 C 13.492188 7.757813 14.75 7.757813 15.523438 8.53125 L 26 19.015625 L 36.484375 8.53125 C 37.257813 7.757813 38.515625 7.757813 39.273438 8.53125 L 43.46875 12.71875 C 44.242188 13.492188 44.242188 14.75 43.476563 15.523438 L 32.992188 26 L 43.46875 36.484375 C 44.242188 37.257813 44.242188 38.507813 43.46875 39.28125 Z " />
                         </svg>
                     </button>
                 </div>
-                <ul className="flex h-full flex-col font-medium justify-evenly rounded-lg">
+                <ul className="h-full flex flex-col items-center justify-evenly text-7xl">
                     <li>
-                        <a href="#" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary" aria-current="page">Home</a>
+                        <a href="#" onClick={toggleMenu} className="dark:text-white hover:text-action" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#about" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">About</a>                    </li>
-                    <li>
-                        <a href="#skills" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">Skills</a>
+                        <a href="#about" onClick={toggleMenu} className="dark:text-white hover:text-action">About</a>
                     </li>
                     <li>
-                        <a href="#projects" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary">Projects</a>
+                        <a href="#skills" onClick={toggleMenu} className="dark:text-white hover:text-action">Skills</a>
                     </li>
                     <li>
-                        <a href="#contact" onClick={toggleMenu} className="flex justify-center items-center text-4xl dark:text-white hover:underline hover:text-primary mb-10">Contact</a>
+                        <a href="#projects" onClick={toggleMenu} className="dark:text-white hover:text-action">Projects</a>
+                    </li>
+                    <li className='mb-20'>
+                        <a href="#contact" onClick={toggleMenu} className="dark:text-white hover:text-action mb-10">Contact</a>
                     </li>
                 </ul>
             </div>

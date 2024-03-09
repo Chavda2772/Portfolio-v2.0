@@ -12,7 +12,7 @@ export default {
         '24rem': '24rem',
       },
       colors: {
-        primary: '#FFFFFF',
+        primary: '#CAF0F8',
         secondary: '#191645',
         action: '#43C6AC',
       },
