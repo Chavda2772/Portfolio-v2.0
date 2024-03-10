@@ -4,6 +4,9 @@ export default {
   darkMode: 'selector',
   theme: {
     extend: {
+      margin: {
+        13: '3.2rem',
+      },
       borderWidth: {
         15: '15px',
         30: '30px',

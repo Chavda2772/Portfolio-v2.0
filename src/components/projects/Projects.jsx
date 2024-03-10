@@ -17,6 +17,9 @@ function Projects() {
 
   return (
     <div id='projects' className='relative'>
+      <div className='absolute h-full w-full flex items-center justify-end overflow-hidden opacity-5'>
+        <label className='text-[35rem] pl-24 uppercase select-none'>Projects</label>
+      </div>
       <div className="h-full bg-secondary w-1 ml-16 absolute"></div>
       <p className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 dark:text-white'>Projects</p>
       <div className="w-full min-h-dvh bg-primary dark:bg-blue-900 ">

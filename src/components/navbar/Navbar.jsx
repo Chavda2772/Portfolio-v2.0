@@ -41,9 +41,9 @@ function Navbar() {
         <>
             <nav className="fixed w-full backdrop-blur-sm bg-secondary/35 dark:bg-gray-800 rounded-b-xl z-20">
                 <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href='#' className="ml-14">
+                    <a href='#' className="ml-8">
                         {/* Logo */}
-                        <svg className='fill-secondary dark:fill-white'
+                        <svg className='fill-secondary hover:fill-action dark:fill-white'
                             height="40"
                             width="40"
                             xmlns="http://www.w3.org/2000/svg"
@@ -54,10 +54,10 @@ function Navbar() {
                                 transform="translate(-51.84 -76.19)" /></svg>
                     </a>
                     <div className="flex items-center space-x-6">
-                        <button onClick={onChangeMode} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <button onClick={onChangeMode} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm  rounded-lg hover:bg-primary focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
                             {!isDark
                                 // Moon
-                                ? < svg className='fill-secondary dark:fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1">
+                                ? < svg className='fill-secondary  dark:fill-white' xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" version="1.1">
                                     <path d="M 16 0 L 14.375 4.375 L 10 6 L 14.375 7.625 L 16 12 L 17.625 7.625 L 22 6 L 17.625 4.375 Z M 6 12 L 4.375 16.375 L 0 18 L 4.375 19.625 L 6 24 L 7.625 19.625 L 12 18 L 7.625 16.375 Z M 30 12 C 20.109375 12 12 20.109375 12 30 C 12 39.890625 20.109375 48 30 48 C 39.414063 48 47.101563 40.8125 48 31.625 L 48.25 28.6875 L 45.4375 29.5 C 44.15625 29.867188 43.210938 30 42 30 C 36.492188 30 32 25.507813 32 20 C 32 18.164063 32.515625 16.546875 33.375 15 L 35 12 Z M 29 16.1875 C 28.625 17.445313 28 18.609375 28 20 C 28 27.6875 34.3125 34 42 34 C 42.4375 34 42.835938 33.851563 43.25 33.8125 C 41.515625 39.664063 36.429688 44 30 44 C 22.289063 44 16 37.710938 16 30 C 16 22.640625 21.78125 16.726563 29 16.1875 Z " />
                                 </svg>
                                 // Sun
@@ -66,7 +66,7 @@ function Navbar() {
                                 </svg>
                             }
                         </button>
-                        <button onClick={onVolumeModeChange} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 text-sm text-gray-500 rounded-lg hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <button onClick={onVolumeModeChange} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 rounded-lg hover:bg-primary focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
                             {!isMute
                                 // Volumte Icon
                                 ? <svg className='fill-secondary dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1">
@@ -79,7 +79,7 @@ function Navbar() {
                             }
                         </button>
                         {/* Action Menu */}
-                        <button onClick={toggleMenu} data-collapse-toggle="navbar-hamburger" type="button" className="p-2 w-10 h-10 text-secondary focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+                        <button onClick={toggleMenu} data-collapse-toggle="navbar-hamburger" type="button" className="p-2 w-10 h-10 text-secondary focus:outline-none hover:bg-primary rounded-md dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                             </svg>

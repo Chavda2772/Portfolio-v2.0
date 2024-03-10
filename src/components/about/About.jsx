@@ -4,9 +4,12 @@ import './About.css'
 function About() {
     return (
         <div id='about' className='relative w-full h-dvh bg-primary dark:bg-gray-800'>
+            <div className='absolute h-full w-full flex items-center justify-end z-[1] overflow-hidden opacity-5'>
+                <label className='text-[35rem] pl-24 uppercase'>About</label>
+            </div>
             <p className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 dark:text-white'>About</p>
             <div className="h-full bg-secondary w-1 ml-16 absolute"></div>
-            <div className="h-dvh flex justify-center items-center ">
+            <div className="h-dvh flex justify-center items-center relative z-10">
                 {/* Image */}
                 <div className='w-2/4 h-full flex justify-center items-end flex-col pr-12'>
                     <img className='w-3/4' src="/images/portfolioImg@2x.png" alt="logo" />
