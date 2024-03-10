@@ -1,4 +1,5 @@
-// Components
+// imports
+import "./MainView.css"
 import Navbar from '../navbar/Navbar';
 import Home from '../home/Home';
 import About from '../about/About';

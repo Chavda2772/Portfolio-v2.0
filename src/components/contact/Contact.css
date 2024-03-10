@@ -1,3 +1,13 @@
-.background-text label {
-  z-index: 0;
+#contact .scroll-animation {
+  animation: scroll-text-contact linear;
+  animation-timeline: scroll(root);
+}
+
+@keyframes scroll-text-contact {
+  0% {
+    transform: translate(-100%);
+  }
+  100% {
+    transform: translate(0%);
+  }
 }

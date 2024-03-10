@@ -4,9 +4,14 @@ import { FaGithub, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 
 function Home() {
   return (
-    <div id='home' className='relative bg-primary dark:bg-lime-950'>
-      <div className='absolute h-full w-full flex items-center overflow-hidden z-[1] opacity-5'>
-        <label className='text-[22rem] pl-24 uppercase select-none break-all'>Mahesh Chavda</label>
+    <div id='home' className='relative bg-primary overflow-hidden dark:bg-lime-950'>
+      <div className="absolute h-full w-full flex flex-col justify-center opacity-10 scroll-animation">
+        <span className='text-[13.5rem] uppercase font-semibold flex ml-32 justify-start w-full'>
+          <span>Mahesh</span><br />
+        </span>
+        <span className='text-[13.5rem] uppercase font-semibold flex justify-end w-full'>
+          <span>Chavda</span>
+        </span>
       </div>
       <div className="h-1/5 bg-secondary w-1 ml-16 absolute bottom-0 z-[2]"></div>
       <div className='absolute bottom-36 ml-13 z-10'>
@@ -25,7 +30,7 @@ function Home() {
               </span>
             </div>
             <span className='text-secondary dark:text-white text-6xl pb-3'>Mahesh Chavda</span>
-            <span className='text-secondary dark:text-white text-xl'>I am Software Engineer and <br />I build the things for web.</span>
+            <span className='text-secondary font-semibold dark:text-white text-xl'>I am Software Engineer and <br />I build the things for web.</span>
           </div>
         </div>
         {/* Image */}

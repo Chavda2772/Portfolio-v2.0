@@ -1,0 +1,13 @@
+.scroll-animation {
+  animation: scroll-text linear;
+  animation-timeline: scroll(root);
+}
+
+@keyframes scroll-text {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}

@@ -3,11 +3,11 @@ import './About.css'
 
 function About() {
     return (
-        <div id='about' className='relative w-full h-dvh bg-primary dark:bg-gray-800'>
-            <div className='absolute h-full w-full flex items-center justify-end z-[1] overflow-hidden opacity-5'>
-                <label className='text-[35rem] pl-24 uppercase'>About</label>
+        <div id='about' className='relative w-full h-dvh overflow-hidden bg-primary dark:bg-gray-800'>
+            <div className="absolute h-full w-full flex items-center opacity-10 scroll-animation right-48">
+                <label className='text-[22rem] uppercase pl-32'>About</label>
             </div>
-            <p className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 dark:text-white'>About</p>
+            <p className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-20 hover:text-action dark:text-white'>About</p>
             <div className="h-full bg-secondary w-1 ml-16 absolute"></div>
             <div className="h-dvh flex justify-center items-center relative z-10">
                 {/* Image */}
