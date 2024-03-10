@@ -21,7 +21,9 @@ function Projects() {
         <label className='text-[22rem] uppercase pl-32'>projects</label>
       </div>
       <div className="h-full bg-secondary w-1 ml-16 absolute"></div>
-      <p className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 dark:text-white'>Projects</p>
+      <a href="#projects" className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 hover:text-action z-[12] dark:text-white'>
+        Projects
+      </a>
       <div className="w-full min-h-dvh bg-primary dark:bg-blue-900 ">
         {/* Projects */}
         <div className='flex flex-col items-center w-full'>

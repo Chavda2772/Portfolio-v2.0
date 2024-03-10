@@ -1,6 +1,10 @@
-#contact .scroll-animation {
+#contact .scroll-animation-contact {  
   animation: scroll-text-contact linear;
   animation-timeline: scroll(root);
+}
+
+#contact .scroll-animation-contact label {
+  transform: scale(1, 1.7);
 }
 
 @keyframes scroll-text-contact {

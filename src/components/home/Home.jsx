@@ -5,12 +5,12 @@ import { FaGithub, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 function Home() {
   return (
     <div id='home' className='relative bg-primary overflow-hidden dark:bg-lime-950'>
-      <div className="absolute h-full w-full flex flex-col justify-center opacity-10 scroll-animation">
-        <span className='text-[13.5rem] uppercase font-semibold flex ml-32 justify-start w-full'>
-          <span>Mahesh</span><br />
+      <div className="absolute h-full w-full flex flex-col justify-center opacity-10 scroll-animation-home">
+        <span className='w-full text-[11rem] uppercase font-semibold flex justify-end -ml-32'>
+          Mahesh
         </span>
-        <span className='text-[13.5rem] uppercase font-semibold flex justify-end w-full'>
-          <span>Chavda</span>
+        <span className='w-full text-[11rem] uppercase font-semibold flex justify-start ml-36'>
+          Chavda
         </span>
       </div>
       <div className="h-1/5 bg-secondary w-1 ml-16 absolute bottom-0 z-[2]"></div>

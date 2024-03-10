@@ -1,0 +1,17 @@
+.scroll-animation-home {
+  animation: scroll-text-home linear;
+  animation-timeline: scroll(root);
+}
+
+.scroll-animation-home span {
+  transform: scale(1, 1.7);
+}
+
+@keyframes scroll-text-home {
+  0% {
+    transform: translate(0%);
+  }
+  100% {
+    transform: translate(100%);
+  }
+}

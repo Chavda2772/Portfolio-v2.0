@@ -7,7 +7,9 @@ function About() {
             <div className="absolute h-full w-full flex items-center opacity-10 scroll-animation right-48">
                 <label className='text-[22rem] uppercase pl-32'>About</label>
             </div>
-            <p className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-20 hover:text-action dark:text-white'>About</p>
+            <a href='#about' className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-action dark:text-white'>
+                About
+            </a>
             <div className="h-full bg-secondary w-1 ml-16 absolute"></div>
             <div className="h-dvh flex justify-center items-center relative z-10">
                 {/* Image */}

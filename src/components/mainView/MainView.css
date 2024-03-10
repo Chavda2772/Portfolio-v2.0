@@ -3,6 +3,11 @@
   animation-timeline: scroll(root);
 }
 
+.scroll-animation label {
+  transform: scale(1, 1.7);
+}
+
+
 @keyframes scroll-text {
   0% {
     transform: translate(0%);

@@ -7,7 +7,9 @@ function Skills() {
       <div className="absolute h-full w-full flex items-center opacity-10 scroll-animation right-1/3">
         <label className='text-[22rem] uppercase pl-32'>Skills</label>
       </div>
-      <p className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 dark:text-white'>Skills</p>
+      <a href='#skills' className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 z-[12] hover:text-action dark:text-white'>
+        Skills
+      </a>
       <div className="h-full bg-secondary w-1 ml-16 absolute z-10"></div>
       <div className="flex w-full min-h-dvh justify-center items-center relative dark:bg-purple-900">
         <div className='w-1/3 h-dvh ml-36 mt-8 relative flex items-start justify-center flex-col'>

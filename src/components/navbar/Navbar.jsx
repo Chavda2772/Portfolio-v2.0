@@ -86,7 +86,6 @@ function Navbar() {
                         </button>
                     </div>
                 </div>
-                {/* <div className='w-full h-2 bg-green-600 scroll-animation'></div> */}
             </nav >
             <div className={`fixed w-full h-full backdrop-blur-3xl bg-secondary/10 z-30 ${isMenuVisible ? '' : 'hidden'}`} id="navbar-hamburger">
                 <div className="flex items-center justify-end h-12">
