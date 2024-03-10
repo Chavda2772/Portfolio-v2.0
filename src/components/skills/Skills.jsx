@@ -4,7 +4,7 @@ import './Skills.css'
 function Skills() {
   return (
     <div id='skills' className='relative bg-primary overflow-hidden'>
-      <div className="absolute h-full w-full flex items-center opacity-10 scroll-animation right-1/3">
+      <div className="absolute h-full w-full flex items-center opacity-5 scroll-animation right-1/3">
         <label className='text-[22rem] uppercase pl-32'>Skills</label>
       </div>
       <a href='#skills' className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 z-[12] hover:text-action dark:text-white'>

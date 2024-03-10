@@ -4,7 +4,7 @@ import './Contact.css'
 function Contact() {
   return (
     <section id='contact' className='relative bg-primary w-full h-dvh overflow-hidden'>
-      <div className='absolute h-full w-full flex items-center opacity-10 scroll-animation-contact left-52'>
+      <div className='absolute h-full w-full flex items-center opacity-5 scroll-animation-contact left-52'>
         <label className='text-[22rem] uppercase'>Contact</label>
       </div>
       <div className="h-3/5 bg-secondary w-1 ml-16 absolute z-[2]"></div>

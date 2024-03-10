@@ -5,7 +5,7 @@ import { FaGithub, FaInstagram, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 function Home() {
   return (
     <div id='home' className='relative bg-primary overflow-hidden dark:bg-lime-950'>
-      <div className="absolute h-full w-full flex flex-col justify-center opacity-10 scroll-animation-home">
+      <div className="absolute h-full w-full flex flex-col justify-center opacity-5 scroll-animation-home">
         <span className='w-full text-[11rem] uppercase font-semibold flex justify-end -ml-32'>
           Mahesh
         </span>

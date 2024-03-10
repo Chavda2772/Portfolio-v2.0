@@ -17,7 +17,7 @@ function Projects() {
 
   return (
     <div id='projects' className='relative overflow-hidden'>
-      <div className="absolute h-full w-full flex items-center opacity-10 scroll-animation right-2/3">
+      <div className="absolute h-full w-full flex items-center opacity-5 scroll-animation right-2/3">
         <label className='text-[22rem] uppercase pl-32'>projects</label>
       </div>
       <div className="h-full bg-secondary w-1 ml-16 absolute"></div>
