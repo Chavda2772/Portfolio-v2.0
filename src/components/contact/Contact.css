@@ -4,7 +4,7 @@
 }
 
 #contact .scroll-animation-contact label {
-  transform: scale(1, 1.7);
+  transform: scale(1, 1.2);
 }
 
 @keyframes scroll-text-contact {

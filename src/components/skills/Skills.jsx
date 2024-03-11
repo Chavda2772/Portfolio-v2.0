@@ -1,7 +1,48 @@
 // import
+import { useState, useEffect } from "react";
 import './Skills.css'
 
 function Skills() {
+  // variables
+  const [selectedSkills, setSelectedSkills] = useState([]);
+
+  let skillsDetails = [
+    {
+      name: 'Frontend',
+      list: ['JavaScript', 'Ext JS', 'React JS', 'Vue JS', 'Sass', 'Tailwind']
+    },
+    {
+      name: 'Backend',
+      list: ['Node JS', 'Dot Net Core']
+    },
+    {
+      name: 'Database',
+      list: ['MySql', 'Microsoft Sql', 'MongoDB']
+    },
+    {
+      name: 'Tools',
+      list: ['Vue JS', 'Sass', 'Tailwind']
+    },
+    {
+      name: 'Language',
+      list: ['English', 'Hindi', 'Gujarati']
+    },
+    {
+      name: 'Professinal Skills',
+      list: ['Team Work', 'Creativity', 'Project Management', 'Communication']
+    }
+  ];
+
+  useEffect(() => {
+    setSelectedSkills(skillsDetails[0])
+  }, []);
+
+  // Methods
+  function onSkillSelect(changeValue) {
+    changeValue(this);
+  }
+
+  // Template
   return (
     <div id='skills' className='relative bg-primary overflow-hidden'>
       <div className="absolute h-full w-full flex items-center opacity-5 scroll-animation right-1/3">
@@ -14,25 +55,38 @@ function Skills() {
       <div className="flex w-full min-h-dvh justify-center items-center relative dark:bg-purple-900">
         <div className='w-1/3 h-dvh ml-36 mt-8 relative flex items-start justify-center flex-col'>
           <div className="h-3/6 bg-secondary w-1 ml-1 absolute mt-8"></div>
-          <p className='before:inline-block before:w-5 before:h-5 before:-ml-1 before:mr-5 before:bg-secondary before:rounded-full pl-0 p-3 text-3xl dark:text-white'>Frontend</p>
-          <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-secondary before:rounded-full pl-0 p-3 text-xl dark:text-white'>Backend</p>
-          <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-secondary before:rounded-full pl-0 p-3 text-xl dark:text-white'>Database</p>
-          <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-secondary before:rounded-full pl-0 p-3 text-xl dark:text-white'>Tools</p>
-          <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-secondary before:rounded-full pl-0 p-3 text-xl dark:text-white'>Language</p>
-          <p className='before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-secondary before:rounded-full pl-0 p-3 text-xl dark:text-white'>Professinal Skills</p>
+          {
+            skillsDetails.map((item, idx) => {
+              let classList = "";
+              if (item.name == selectedSkills.name)
+                classList = 'before:inline-block before:w-5 before:h-5 before:mr-5 before:bg-secondary before:rounded-full pl-0 p-3 text-3xl dark:text-white before:-ml-1 hover:cursor-pointer text-action';
+              else
+                classList = 'before:inline-block before:w-3 before:h-3 before:mr-5 before:bg-secondary before:rounded-full pl-0 p-3 text-xl dark:text-white hover:cursor-pointer hover:text-action';
+
+              return (
+                <p
+                  key={idx}
+                  className={classList}
+                  value={item}
+                  onClick={onSkillSelect.bind(item, setSelectedSkills)}
+                >
+                  {item.name}
+                </p>
+              )
+            })
+          }
         </div>
         <div className='w-1/3 h-dvh flex justify-start items-center mt-8'>
           <div className='w-3/4 flex items-start justify-center flex-col rounded-2xl bg-secondary dark:bg-white/50'>
-            <h2 className='text-2xl p-3 pl-6 text-white dark:text-black'>Javascript</h2>
-            <h2 className='text-2xl p-3 pl-6 text-white dark:text-black'>Ext JS</h2>
-            <h2 className='text-2xl p-3 pl-6 text-white dark:text-black'>React JS</h2>
-            <h2 className='text-2xl p-3 pl-6 text-white dark:text-black'>Vue JS</h2>
-            <h2 className='text-2xl p-3 pl-6 text-white dark:text-black'>Sass</h2>
-            <h2 className='text-2xl p-3 pl-6 text-white dark:text-black'>Tailwind</h2>
+            {
+              selectedSkills?.list?.map((item, idx) => {
+                return <h2 key={idx} className='text-2xl p-3 pl-6 text-white hover:cursor-pointer hover:text-action dark:text-black'>{item}</h2>
+              })
+            }
           </div>
         </div>
       </div>
-    </div>
+    </div >
   );
 }
 
