@@ -20,11 +20,11 @@ function Projects() {
       <div className="absolute h-full w-full flex items-center opacity-5 scroll-animation right-2/3">
         <label className='text-[22rem] uppercase pl-32'>projects</label>
       </div>
-      <div className="h-full bg-secondary w-1 ml-16 absolute"></div>
-      <a href="#projects" className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 hover:text-action z-[12] dark:text-white'>
+      <div className="h-full bg-skin-secondary w-1 ml-16 absolute"></div>
+      <a href="#projects" className='absolute top-20 before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 hover:text-skin-action z-[12] dark:text-white'>
         Projects
       </a>
-      <div className="w-full min-h-dvh bg-primary dark:bg-blue-900 ">
+      <div className="w-full min-h-dvh bg-skin-primary dark:bg-blue-900 ">
         {/* Projects */}
         <div className='flex flex-col items-center w-full'>
           {

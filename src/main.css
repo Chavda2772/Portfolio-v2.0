@@ -5,3 +5,21 @@
 html {
   scroll-behavior: smooth;
 }
+
+@layer base {
+  .theme-default {
+    --color-primary: 202, 240, 248;
+    --color-secondary: 25, 22, 69;
+    --color-action: 67, 198, 172;
+  }
+  .theme-swiss {
+    --color-primary: 248, 202, 202;
+    --color-secondary: 69, 22, 22;
+    --color-action: 198, 67, 67;
+  }
+  .theme-neon {
+    --color-primary: 211, 248, 202;
+    --color-secondary: 24, 69, 22;
+    --color-action: 71, 198, 67;
+  }
+}
