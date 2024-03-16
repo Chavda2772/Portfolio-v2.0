@@ -70,11 +70,11 @@ function Navbar() {
     // Element
     return (
         <>
-            <nav className="fixed w-full backdrop-blur-sm bg-skin-secondary/35 dark:bg-gray-800 rounded-b-xl z-20">
-                <div className="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            <nav className="fixed w-full backdrop-blur-sm bg-skin-secondary/35 rounded-b-xl z-20">
+                <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
                     <a href='#' className="ml-8">
                         {/* Logo */}
-                        <svg className='fill-skin-secondary hover:fill-skin-action dark:fill-white'
+                        <svg className='fill-skin-secondary hover:fill-skin-action'
                             height="40"
                             width="40"
                             xmlns="http://www.w3.org/2000/svg"
@@ -85,31 +85,31 @@ function Navbar() {
                                 transform="translate(-51.84 -76.19)" /></svg>
                     </a>
                     <div className="flex items-center space-x-6">
-                        <button onClick={changeTheme} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm  rounded-lg hover:bg-skin-primary focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
-                            <GiPaintRoller className='text-3xl text-skin-secondary dark:text-white' />
+                        <button onClick={changeTheme} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm rounded-lg hover:bg-skin-primary focus:outline-none">
+                            <GiPaintRoller className='text-3xl text-skin-secondary' />
                         </button>
-                        <button onClick={onChangeMode} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm  rounded-lg hover:bg-skin-primary focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <button onClick={onChangeMode} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm rounded-lg hover:bg-skin-primary focus:outline-none">
                             {!isDark
                                 // Moon
                                 ? <FaMoon className='text-3xl fill-skin-secondary' />
                                 // Sun
-                                : <FaSun className='text-3xl fill-white' />
+                                : <FaSun className='text-3xl fill-skin-secondary' />
                             }
                         </button>
-                        <button onClick={onVolumeModeChange} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 rounded-lg hover:bg-skin-primary focus:outline-none dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600">
+                        <button onClick={onVolumeModeChange} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 rounded-lg hover:bg-skin-primary focus:outline-none">
                             {!isMute
                                 // Volumte Icon
-                                ? <svg className='fill-skin-secondary dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1">
+                                ? <svg className='fill-skin-secondary' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1">
                                     <path d="M 24 6 L 12 18 L 4 18 L 4 30 L 12 30 L 24 42 Z M 28 6.1875 L 28 10.1875 C 34.375 11.125 39.34375 16.28125 39.9375 22.6875 C 39.976563 23.117188 40 23.5625 40 24 C 40 31 34.796875 36.8125 28 37.8125 L 28 41.8125 C 37 40.8125 44 33.203125 44 24 C 44 14.796875 37 7.1875 28 6.1875 Z M 28 14.1875 L 28 18.375 C 30.398438 19.171875 32 21.398438 32 24 C 32 26.601563 30.398438 28.828125 28 29.625 L 28 33.8125 C 32.601563 32.8125 36 28.796875 36 24 C 36 19.203125 32.601563 15.1875 28 14.1875 Z " />
                                 </svg>
                                 // Mute Icon
-                                : <svg className='fill-skin-secondary dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="20" viewBox="0 0 52 52" version="1.1">
+                                : <svg className='fill-skin-secondary' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" width="20" viewBox="0 0 52 52" version="1.1">
                                     <path d="M 1.8125 -0.0625 C 1.726563 -0.046875 1.640625 -0.0234375 1.5625 0 C 0.8125 0.132813 0.210938 0.679688 0 1.40625 C -0.210938 2.140625 0.0078125 2.921875 0.5625 3.4375 L 48.5625 51.4375 C 49.359375 52.234375 50.640625 52.234375 51.4375 51.4375 C 52.234375 50.640625 52.234375 49.359375 51.4375 48.5625 L 45.0625 42.1875 C 49.453125 38.132813 52.1875 32.421875 52.1875 26.1875 C 52.1875 17.789063 47.601563 10.421875 40 6.625 C 39 6.226563 37.773438 6.578125 37.375 7.375 C 36.773438 8.171875 37.203125 9.398438 38 10 C 44.203125 13 48 19.203125 48 26 C 48 31.234375 45.796875 35.921875 42.125 39.25 L 39.5625 36.625 C 42.203125 33.703125 43.8125 29.859375 43.8125 25.8125 C 43.8125 20.015625 40.578125 14.609375 35.375 11.8125 C 34.375 11.210938 33.226563 11.625 32.625 12.625 C 32.421875 13.625 32.828125 14.976563 33.625 15.375 C 37.625 17.578125 40 21.601563 40 26 C 40 29.039063 38.835938 31.867188 36.875 34 L 34.0625 31.1875 C 35.296875 29.804688 36 28.015625 36 26 C 36 22.398438 33.601563 19.1875 30 18.1875 C 29 17.984375 27.828125 18.625 27.625 19.625 C 27.421875 20.828125 28 21.789063 29 22.1875 C 30.796875 22.585938 32 24.203125 32 26 C 32 26.867188 31.742188 27.710938 31.25 28.375 L 26 23.125 L 26 6.625 C 26 4.023438 23.796875 3.390625 22 5.1875 L 14.9375 12.0625 L 3.4375 0.5625 C 3.023438 0.117188 2.421875 -0.109375 1.8125 -0.0625 Z M 9.375 17.625 L 8.8125 18 L 2 18 C 0.796875 18 0 18.796875 0 20 L 0 32 C 0 33.203125 0.796875 34 2 34 L 8.8125 34 L 21.8125 46.8125 C 23.8125 48.8125 25.8125 47.796875 25.8125 45 L 25.8125 34.1875 Z " />
                                 </svg>
                             }
                         </button>
                         {/* skin-action Menu */}
-                        <button onClick={toggleMenu} data-collapse-toggle="navbar-hamburger" type="button" className="p-2 w-10 h-10 text-skin-secondary focus:outline-none hover:bg-skin-primary rounded-md dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-hamburger" aria-expanded="false">
+                        <button onClick={toggleMenu} data-collapse-toggle="navbar-hamburger" type="button" className="p-2 w-10 h-10 text-skin-secondary focus:outline-none hover:bg-skin-primary rounded-md" aria-controls="navbar-hamburger" aria-expanded="false">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                             </svg>
@@ -120,26 +120,26 @@ function Navbar() {
             <div className={`fixed w-full h-full backdrop-blur-3xl bg-skin-secondary/10 z-30 ${isMenuVisible ? '' : 'hidden'}`} id="navbar-hamburger">
                 <div className="flex items-center justify-end h-12">
                     <button onClick={toggleMenu} type="button" className='mr-12 mt-5'>
-                        <svg className='h-10 hover:fill-skin-action dark:fill-white' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" version="1.1">
+                        <svg className='h-10 fill-skin-secondary hover:fill-skin-action' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" version="1.1">
                             <path d="M 43.46875 39.28125 L 39.273438 43.46875 C 38.507813 44.242188 37.257813 44.242188 36.484375 43.46875 L 26 32.992188 L 15.523438 43.46875 C 14.75 44.242188 13.492188 44.242188 12.726563 43.46875 L 8.53125 39.28125 C 7.757813 38.507813 7.757813 37.257813 8.53125 36.484375 L 19.007813 26 L 8.53125 15.523438 C 7.765625 14.742188 7.765625 13.484375 8.53125 12.726563 L 12.726563 8.53125 C 13.492188 7.757813 14.75 7.757813 15.523438 8.53125 L 26 19.015625 L 36.484375 8.53125 C 37.257813 7.757813 38.515625 7.757813 39.273438 8.53125 L 43.46875 12.71875 C 44.242188 13.492188 44.242188 14.75 43.476563 15.523438 L 32.992188 26 L 43.46875 36.484375 C 44.242188 37.257813 44.242188 38.507813 43.46875 39.28125 Z " />
                         </svg>
                     </button>
                 </div>
                 <ul className="h-full flex flex-col items-center justify-evenly text-7xl">
                     <li>
-                        <a href="#" onClick={toggleMenu} className="dark:text-white hover:text-skin-action" aria-current="page">Home</a>
+                        <a href="#" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#about" onClick={toggleMenu} className="dark:text-white hover:text-skin-action">About</a>
+                        <a href="#about" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">About</a>
                     </li>
                     <li>
-                        <a href="#skills" onClick={toggleMenu} className="dark:text-white hover:text-skin-action">Skills</a>
+                        <a href="#skills" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">Skills</a>
                     </li>
                     <li>
-                        <a href="#projects" onClick={toggleMenu} className="dark:text-white hover:text-skin-action">Projects</a>
+                        <a href="#projects" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">Projects</a>
                     </li>
                     <li className='mb-20'>
-                        <a href="#contact" onClick={toggleMenu} className="dark:text-white hover:text-skin-action mb-10">Contact</a>
+                        <a href="#contact" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action mb-10">Contact</a>
                     </li>
                 </ul>
             </div>

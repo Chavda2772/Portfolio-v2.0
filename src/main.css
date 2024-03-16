@@ -1,3 +1,7 @@
+/* Themes */
+@import 'theme/neon.css';
+@import 'theme/swiss.css';
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -12,14 +16,10 @@ html {
     --color-secondary: 25, 22, 69;
     --color-action: 67, 198, 172;
   }
-  .theme-swiss {
-    --color-primary: 248, 202, 202;
-    --color-secondary: 69, 22, 22;
-    --color-action: 198, 67, 67;
-  }
-  .theme-neon {
-    --color-primary: 211, 248, 202;
-    --color-secondary: 24, 69, 22;
-    --color-action: 71, 198, 67;
+
+  html.dark .theme-default {
+    --color-primary: 31, 34, 53;
+    --color-secondary: 209, 214, 255;
+    --color-action: 255, 75, 75;
   }
 }
