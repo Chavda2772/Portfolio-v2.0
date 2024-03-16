@@ -12,8 +12,8 @@ function Contact() {
         Contact
       </a>
       <div className='relative'>
-        <div className="w-full h-dvh flex justify-center flex-col items-center relative z-10">
-          <div className='w-2/3 flex flex-col pb-10 text-3xl'>
+        <div className="w-full h-dvh flex justify-center flex-col items-center relative z-10 md:m-auto">
+          <div className='w-2/3 md:w-2/4 flex flex-col pb-10 text-3xl md:text-2xl'>
             <label className='text-center font-semibold text-black dark:text-white'>My inbox is always open. Whether you have a question or
               just want to say hi, I will try my best to get back to you!</label>
           </div>

@@ -21,10 +21,10 @@ function Home() {
         <FaTwitter className="text-3xl mb-3 cursor-pointer fill-skin-secondary hover:fill-skin-action" />
         <FaLinkedinIn className="text-3xl cursor-pointer fill-skin-secondary hover:fill-skin-action" />
       </div>
-      <div className="w-full h-dvh flex justify-center items-center relative z-[2]">
+      <div className="w-full h-dvh flex justify-center items-center md:flex-col-reverse relative z-[2]">
         {/* Description */}
-        <div className='w-1/2 flex justify-end'>
-          <div className='flex flex-col justify-center items-start pr-20'>
+        <div className='w-1/2 md:w-full md:h-1/2 flex justify-end md:justify-center'>
+          <div className='flex flex-col justify-center items-start pr-20 md:pr-0'>
             <div className='ml-10 mb-5 flex flex-col relative'>
               <span className='text-white bg-skin-secondary p-2 pr-4 pl-4 rounded-md z-10'>It&apos;s me</span>
               <span className='absolute right-1 -bottom-4 w-0 h-0 border-l-15 border-l-transparent border-r-15 border-r-transparent border-t-30 border-t-skin-secondary'>
@@ -35,8 +35,8 @@ function Home() {
           </div>
         </div>
         {/* Image */}
-        <div className='w-1/2 h-full flex justify-end items-start flex-col'>
-          <img className='w-3/5' src="/images/ProfessionalPhoto@2x.png" alt="logo" />
+        <div className='w-1/2 h-full md:h-1/2 flex justify-end md:justify-center items-start flex-col'>
+          <img className='w-3/5 md:w-2/3' src="/images/ProfessionalPhoto@2x.png" alt="logo" />
         </div>
       </div>
     </div>

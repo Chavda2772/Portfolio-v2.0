@@ -11,20 +11,20 @@ function About() {
                 About
             </a>
             <div className="h-full bg-skin-secondary w-1 ml-16 absolute"></div>
-            <div className="h-dvh flex justify-center items-center relative z-10">
+            <div className="h-dvh flex justify-center items-center relative z-10 md:flex-col">
                 {/* Image */}
-                <div className='w-2/4 h-full flex justify-center items-end flex-col pr-12'>
-                    <img className='w-3/4' src="/images/portfolioImg@2x.png" alt="logo" />
+                <div className='w-2/4 md:w-full h-full md:h-1/2 flex justify-center items-end flex-col pr-12 md:pr-0 md:mt-20 md:ml-16'>
+                    <img className='w-3/4 md:w-full' src="/images/portfolioImg@2x.png" alt="logo" />
                 </div>
                 {/* Description */}
-                <div className='w-2/4 pl-12'>
-                    <div className='w-2/3 flex flex-col justify-center items-center pb-6'>
+                <div className='w-2/4 md:w-full md:h-1/2 pl-12 md:pr-8 md:pl-24'>
+                    <div className='w-2/3 md:w-full flex flex-col justify-center items-center pb-6'>
                         <span className='text-skin-secondary dark:text-white font-semibold'>I am Mahesh Chavda, holding a Bachelor of Technology (B.Tech) degree
                             from RK University, Rajkot, and currently employed as a Software Engineer at
                             Knovos India Pvt. Ltd. Based in India, I am dedicated to upgrading my skills
                             in .NET Core 8.0 and other emerging technologies.</span>
                     </div>
-                    <button className='bg-skin-secondary p-8 pt-3 pb-3 rounded-md text-skin-action hover:bg-skin-secondary/80 active:scale-95'>Resume</button>
+                    <button className='bg-skin-secondary p-8 pt-3 pb-3 rounded-md text-skin-action hover:bg-skin-secondary/80 active:scale-95 md:w-full md:mt-12'>Resume</button>
                 </div>
             </div>
         </div>

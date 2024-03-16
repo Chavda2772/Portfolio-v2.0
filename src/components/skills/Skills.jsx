@@ -21,7 +21,7 @@ function Skills() {
     },
     {
       name: 'Tools',
-      list: ['Vue JS', 'Sass', 'Tailwind']
+      list: ['Visual Studio 2022', 'Visual studio code', '', 'Adobe XD']
     },
     {
       name: 'Language',
@@ -52,9 +52,9 @@ function Skills() {
         Skills
       </a>
       <div className="h-full bg-skin-secondary w-1 ml-16 absolute z-10"></div>
-      <div className="flex w-full min-h-dvh justify-center items-center relative dark:bg-purple-900">
-        <div className='w-1/3 h-dvh ml-36 mt-8 relative flex items-start justify-center flex-col'>
-          <div className="h-3/6 bg-skin-secondary w-1 ml-1 absolute mt-8"></div>
+      <div className="flex w-full min-h-dvh justify-center md:justify-start items-center relative md:flex-col md:mt-28">
+        <div className='w-1/3 h-dvh ml-36 md:ml-56 mt-8 relative flex items-start justify-center flex-col md:w-full md:h-1/2'>
+          <div className="h-3/6 md:h-full bg-skin-secondary w-1 ml-1 absolute mt-8"></div>
           {
             skillsDetails.map((item, idx) => {
               let classList = "";
@@ -76,10 +76,11 @@ function Skills() {
             })
           }
         </div>
-        <div className='w-1/3 h-dvh flex justify-start items-center mt-8'>
-          <div className='w-3/4 flex items-start justify-center flex-col rounded-2xl bg-skin-secondary dark:bg-white/50'>
+        <div className='w-1/3 md:w-full h-dvh md:h-1/2 flex justify-start md:justify-center items-center mt-8 md:mt-12'>
+          <div className='w-3/4 md:w-2/4 flex items-start justify-center flex-col rounded-2xl bg-skin-secondary dark:bg-white/50'>
             {
               selectedSkills?.list?.map((item, idx) => {
+                if(!item) return;
                 return <h2 key={idx} className='text-2xl p-3 pl-6 text-white hover:cursor-pointer hover:text-skin-action dark:text-black'>{item}</h2>
               })
             }

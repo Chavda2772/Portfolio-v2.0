@@ -17,7 +17,7 @@ export default {
         skin: {
           primary: withOpacity('--color-primary'),
           secondary: withOpacity('--color-secondary'),
-          action: withOpacity('--color-action')
+          action: withOpacity('--color-action'),
         },
       },
       margin: {
@@ -30,11 +30,19 @@ export default {
       fontSize: {
         '24rem': '24rem',
       },
-      // colors: {
-      //   primary: '#CAF0F8',
-      //   secondary: '#191645',
-      //   action: '#43C6AC',
-      // },
+    },
+    screens: {
+      xl: { max: '1279px' },
+      // => @media (max-width: 1279px) { ... }
+
+      lg: { max: '1023px' },
+      // => @media (max-width: 1023px) { ... }
+
+      md: { max: '767px' },
+      // => @media (max-width: 767px) { ... }
+
+      sm: { max: '639px' },
+      // => @media (max-width: 639px) { ... }
     },
   },
   plugins: [],
