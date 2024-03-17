@@ -8,11 +8,11 @@ import './App.css';
 
 // Components design
 function App() {
-    const [loading, setLoading] = useState(true);
+    const [loading, setLoading] = useState(false);
 
     setTimeout(() => {
         setLoading(false);
-    }, 1000);
+    }, 1500);
 
     useEffect(() => {
         if (localStorage.themeMode) {

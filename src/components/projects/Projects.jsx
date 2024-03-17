@@ -40,7 +40,7 @@ function Projects() {
         <label className='text-[22rem] uppercase text-skin-secondary scroll-animation'>projects</label>
       </div>
       <div className="h-full bg-skin-secondary w-1 ml-16 absolute"></div>
-      <a href='#projects' className='sticky top-20 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
+      <a href='#projects' className='sticky md:absolute top-20 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
         Projects
       </a>
       <div className="w-full min-h-full pt-20">
@@ -65,7 +65,7 @@ function Projects() {
           }
         </div>
         <div className='w-full flex justify-center'>
-          <button className='bg-skin-secondary p-8 pt-3 m-6 pb-3 inline-flex rounded-md text-skin-primary z-10 hover:bg-skin-secondary/80 hover:text-skin-action active:scale-95'>
+          <button className='bg-skin-secondary p-8 pt-3 m-6 pb-3 inline-flex rounded-md text-skin-primary z-10 hover:bg-skin-secondary/80 hover:text-skin-action active:scale-95 custom-hidden'>
             Noteworthy Projects
             <FaLongArrowAltRight className='ml-6 text-2xl' />
           </button>

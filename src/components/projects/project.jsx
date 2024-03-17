@@ -13,7 +13,7 @@ function Project(project) {
   isInverse ? isInverse : false;
 
   return (
-    <div className={`flex justify-center items-center w-3/5 h-2/4 m-14 relative bg-skin-secondary p-6 rounded-lg ${isInverse ? ' flex-row-reverse' : ''}`}>
+    <div className={`flex justify-center items-center w-3/5 h-2/4 m-14 relative bg-skin-secondary p-6 rounded-lg custom-hidden ${isInverse ? ' flex-row-reverse' : ''}`}>
       <h3 className={`absolute text-8xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-14 ${isInverse ? '-left-12' : '-right-12'}`}>
         {projectCount}
       </h3>

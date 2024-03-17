@@ -1,8 +1,8 @@
 function Footer() {
   return (
-    <div className="flex justify-center items-center flex-col bg-skin-secondary rounded-t-2xl p-2 text-skin-primary">
-      <span>Copyright @2024 MaheshChavda, All rights are reserved.</span>
-      <span>Created By Mahesh Chavda</span>
+    <div className="flex justify-center items-center flex-col bg-skin-primary p-2 text-skin-secondary border-t-skin-secondary border-t-2">
+      <span className='text-center custom-hidden'>Copyright @2024 MaheshChavda, <wbr />All rights are reserved.</span>
+      <span className='text-center custom-hidden'>Created By Mahesh Chavda</span>
     </div >
   );
 }

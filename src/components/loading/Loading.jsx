@@ -15,6 +15,7 @@ function Loading() {
         animate={{ rotate: 360, scale: 1 }}
         transition={{
           type: "spring",
+          repeat: Infinity,
           stiffness: 260,
           damping: 20
         }}
