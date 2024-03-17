@@ -12,7 +12,7 @@ function About() {
                 About
             </a>
             <div className="h-dvh flex justify-center items-center relative z-10 md:flex-col">
-                <div className='w-2/4 md:w-full h-full md:h-1/2 flex justify-center items-end flex-col pr-12 md:pr-0 md:mt-20 md:ml-16'>
+                <div className='w-2/4 md:w-5/6 h-full md:h-1/2 flex justify-center items-end flex-col pr-12 md:pr-0 md:mt-20 md:ml-16'>
                     <img className='w-3/4 md:w-full' src="/images/portfolioImg@2x.png" alt="logo" />
                 </div>
 
@@ -27,7 +27,9 @@ function About() {
                             Knovos India Pvt. Ltd. Based in India, I am dedicated to upgrading my skills
                             in .NET Core 8.0 and other emerging technologies.</span>
                     </div>
-                    <button className='bg-skin-secondary p-8 pt-3 pb-3 rounded-md text-skin-primary hover:bg-skin-secondary/80 active:scale-95 md:w-full md:mt-12'>Resume</button>
+                    <a href='/assets/resume.pdf' target='_blank'>
+                        <button className='bg-skin-secondary p-8 pt-3 pb-3 rounded-md text-skin-primary hover:bg-skin-secondary/80 active:scale-95 md:w-full md:mt-12'>Resume</button>
+                    </a>
                 </div>
             </div>
         </div>

@@ -18,7 +18,15 @@
 
 .homepage-photo {
   background: url('/images/ProfessionalPhoto@2x.png') no-repeat center;
-  background-size: 30%; 
+  background-size: 30%;
   background-position: bottom;
   background-attachment: fixed;
+}
+
+.drop-shadow-custom {
+  filter: drop-shadow(0 0.25rem 1rem rgb(var(--color-secondary)));
+}
+
+.bg-shadow-custom {
+  background: linear-gradient(0deg, rgb(var(--color-primary)), transparent);
 }

@@ -1,10 +1,12 @@
 import { FaGithub } from "react-icons/fa";
 import { RiExternalLinkFill } from "react-icons/ri";
+import { FaChrome, FaEdge } from "react-icons/fa6";
 
 // eslint-disable-next-line react/prop-types
-function Project({ id, isInverse, name, discription }) {
+function Project(project) {
   // variables
   let projectCount = '01';
+  let { id, isInverse, name, discription, techList } = project;
 
   // validation
   if (id) projectCount = id.toString().padStart(2, "0")
@@ -12,7 +14,7 @@ function Project({ id, isInverse, name, discription }) {
 
   return (
     <div className={`flex justify-center items-center w-3/5 h-2/4 m-14 relative bg-skin-secondary p-6 rounded-lg ${isInverse ? ' flex-row-reverse' : ''}`}>
-      <h3 className={`absolute text-8xl font-bold text-skin-secondary backdrop-blur-md bg-white/30 p-5 rounded-md -top-14 ${isInverse ? '-left-12' : '-right-12'}`}>
+      <h3 className={`absolute text-8xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-14 ${isInverse ? '-left-12' : '-right-12'}`}>
         {projectCount}
       </h3>
       <div className='w-1/2 h-full flex justify-center flex-col'>
@@ -23,17 +25,33 @@ function Project({ id, isInverse, name, discription }) {
           {discription}
         </p>
         <div className={`pt-3 ${isInverse ? 'pl-6' : ''}`}>
-          <span className='pr-3 text-skin-primary'>Ext JS</span>
-          <span className='pr-3 text-skin-primary'>Chrome</span>
-          <span className='pr-3 text-skin-primary'>Edge</span>
+          {
+            techList?.map((itm, idx)=>{
+              return <span key={idx} className='pr-3 text-skin-primary cursor-pointer hover:text-skin-action'>{itm}</span>;
+            })
+          }
         </div>
         <div className={`flex pt-2 ${isInverse ? 'pl-6' : ''}`}>
-          <FaGithub className="text-xl mr-3 cursor-pointer text-skin-action" />
-          <RiExternalLinkFill className="text-xl mr-3 cursor-pointer text-skin-action" />
+          {/* Github */}
+          <a hidden={!project.gitLink} href={project.gitLink} target='_blank'>
+            <FaGithub className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+          </a>
+          {/* Chrome */}
+          <a hidden={!project.chromeLink} href={project.chromeLink} target='_blank'>
+            <FaChrome className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+          </a>
+          {/* Edge */}
+          <a hidden={!project.edgeLink} href={project.edgeLink} target='_blank'>
+            <FaEdge className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+          </a>
+          {/* External */}
+          <a hidden={!project.externalLink} href={project.externalLink} target='_blank'>
+            <RiExternalLinkFill className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+          </a>
         </div>
       </div>
       <div className='w-1/2 h-full flex items-center'>
-        <img className='object-cover w-full rounded-md' src="/images/Spyglass@2x.png" alt="" />
+        <img className='object-cover w-full rounded-md' src={project.imgSource} alt="" />
       </div>
     </div>
   );

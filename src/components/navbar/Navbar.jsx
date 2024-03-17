@@ -6,7 +6,7 @@ import { FaSun } from "react-icons/fa6";
 import { GiPaintRoller } from "react-icons/gi";
 
 // react
-import { useState, useEffect } from "react";
+import { useState } from "react";
 
 function Navbar() {
     // variables
@@ -16,16 +16,6 @@ function Navbar() {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
 
     const themeList = ['theme-default', 'theme-swiss', 'theme-neon'];
-
-    // Hooks
-    useEffect(() => {
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-            changeThemeMode('dark');
-            setIsDark(true);
-        }
-
-        changeApplicationTheme(themeList[0])
-    }, []);
 
     // Methods
     const onChangeMode = () => {
@@ -39,7 +29,9 @@ function Navbar() {
             themeIdx = 0;
         }
 
-        changeApplicationTheme(themeList[themeIdx])
+        let themeColor = themeList[themeIdx];
+        changeApplicationTheme(themeColor)
+        localStorage.themeColor = themeColor;
     }
 
     const onVolumeModeChange = () => {
@@ -51,7 +43,7 @@ function Navbar() {
 
     // Helper function
     const changeThemeMode = (theme) => {
-        localStorage.theme = theme;
+        localStorage.themeMode = theme;
         setIsDark(theme === 'dark');
 
         if (theme === 'dark')
@@ -61,9 +53,9 @@ function Navbar() {
     }
 
     const changeApplicationTheme = function (theme) {
-        let root = document.getElementById('root');
-        root.classList = [];
-        root.classList.add(theme);
+        let bodyEl = document.body;
+        bodyEl.classList = [];
+        bodyEl.classList.add(theme);
         setCurrentTheme(theme);
     }
 
@@ -85,6 +77,7 @@ function Navbar() {
                                 transform="translate(-51.84 -76.19)" /></svg>
                     </a>
                     <div className="flex items-center space-x-6">
+                        {/* Theme */}
                         <button onClick={changeTheme} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm rounded-lg hover:bg-skin-primary focus:outline-none">
                             <GiPaintRoller className='text-3xl text-skin-secondary' />
                         </button>

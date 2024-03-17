@@ -1,7 +1,8 @@
 // import
 import './Home.css'
-import { FaGithub, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { AiFillInstagram } from "react-icons/ai";
+import { BsTwitterX } from "react-icons/bs";
 
 function Home() {
   return (
@@ -16,10 +17,18 @@ function Home() {
       </div>
       <div className="h-1/5 bg-skin-secondary w-1 ml-16 absolute bottom-0 z-[2]"></div>
       <div className='absolute bottom-36 ml-13 z-10 md:bottom-52'>
-        <FaGithub className="text-3xl mb-3 cursor-pointer fill-skin-secondary hover:fill-skin-action" />
-        <AiFillInstagram className="text-3xl mb-3 cursor-pointer fill-skin-secondary hover:fill-skin-action" />
-        <FaTwitter className="text-3xl mb-3 cursor-pointer fill-skin-secondary hover:fill-skin-action" />
-        <FaLinkedinIn className="text-3xl cursor-pointer fill-skin-secondary hover:fill-skin-action" />
+        <a href='https://github.com/chavda2772' target='_blank'>
+          <FaGithub className="text-3xl mb-3 cursor-pointer fill-skin-secondary hover:fill-skin-action" />
+        </a>
+        <a href='https://www.instagram.com/_mahesh_ahir_' target='_blank'>
+          <AiFillInstagram className="text-3xl mb-3 cursor-pointer fill-skin-secondary hover:fill-skin-action" />
+        </a>
+        <a href='https://twitter.com/Mahesh_277' target='_blank'>
+          <BsTwitterX className="text-3xl mb-3 cursor-pointer fill-skin-secondary hover:fill-skin-action" />
+        </a>
+        <a href='https://www.linkedin.com/in/mahesh-chavda/' target='_blank'>
+          <FaLinkedinIn className="text-3xl cursor-pointer fill-skin-secondary hover:fill-skin-action" />
+        </a>
       </div>
       <div className="w-full h-dvh flex justify-center items-end md:flex-col-reverse relative z-[2]">
         {/* Description */}
@@ -35,8 +44,9 @@ function Home() {
           </div>
         </div>
         {/* Image */}
-        <div className='w-1/2 md:w-full h-full md:h-1/2 flex justify-end md:justify-end items-start md:items-center flex-col'>
-          <img className='w-3/5 md:w-2/3' src="/images/ProfessionalPhoto@2x.png" alt="logo" />
+        <div className='relative w-1/2 md:w-full h-full md:h-1/2 flex justify-end md:justify-end items-start md:items-center flex-col overflow-hidden'>
+          <img className='w-3/5 md:w-2/3 drop-shadow-custom' src="/images/ProfessionalPhoto@2x.png" alt="logo" />
+          <div className='absolute h-3/6 w-3/5 bg-shadow-custom md:w-5/6'></div>
         </div>
 
         {/* image in div backup */}

@@ -76,7 +76,7 @@ function Skills() {
             })
           }
         </div>
-        <div className='w-1/3 md:w-full h-dvh md:h-1/2 flex justify-start md:justify-center items-center mt-8 md:mt-12'>
+        <div className='w-1/3 md:w-full h-dvh md:h-1/2 flex justify-start md:flex-col md:justify-center items-center mt-8'>
           <div className='w-3/4 md:w-2/4 flex items-start justify-center flex-col rounded-2xl bg-skin-secondary'>
             {
               selectedSkills?.list?.map((item, idx) => {
