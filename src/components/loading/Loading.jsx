@@ -1,25 +1,10 @@
 // import
 import './Loading.css'
-import { motion } from "framer-motion"
 
 function Loading() {
   return (
-    <motion.div
-      hidden={true}
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      className='w-full h-dvh flex justify-center items-center bg-skin-primary'>
-      <motion.svg
-        initial={{ scale: 0 }}
-        animate={{ rotate: 360, scale: 1 }}
-        transition={{
-          type: "spring",
-          repeat: Infinity,
-          stiffness: 260,
-          damping: 20
-        }}
-        className='fill-skin-secondary'
+    <div className='w-full h-dvh flex justify-center items-center bg-skin-primary'>
+      <svg className='fill-skin-secondary'
         height="40"
         width="40"
         xmlns="http://www.w3.org/2000/svg"
@@ -28,8 +13,8 @@ function Loading() {
           transform="translate(-51.84 -76.19)" />
         <path d="M112.05,263.81c0,43.22-.16,86.44-.06,129.66a20.33,20.33,0,0,1-6.53,15.62c-12.3,12-24.41,24.21-36.49,36.43-3.39,3.43-6.9,6.47-12,4.79-5.81-1.89-4.9-7-4.9-11.57Q52,265,51.84,91.28c0-10,4.07-13.83,13.43-13.49,2.09.08,4.19.09,6.29.14,18.43.5,38.87-5.47,54.76,2.22,15.72,7.61,27.07,24.39,40.14,37.36,20.54,20.37,40.73,41.1,61.45,61.29,8.16,7.95,8.68,14.6-.34,22.52a175,175,0,0,0-19.93,20.08c-8.09,9.84-14.63,8.92-22.66.73-21.73-22.14-44-43.77-65.88-65.76-2.88-2.89-3.23-2.3-7-8.67C112.05,186.93,112.07,224.58,112.05,263.81Z"
           transform="translate(-51.84 -76.19)" />
-      </motion.svg>
-    </motion.div>
+      </svg>
+    </div>
   );
 }
 
