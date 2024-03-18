@@ -39,11 +39,11 @@ function Projects() {
       <div className="absolute h-full w-full flex items-center opacity-5 overflow-hidden">
         <label className='text-[22rem] uppercase text-skin-secondary scroll-animation'>projects</label>
       </div>
-      <div className="h-full bg-skin-secondary w-1 ml-16 absolute"></div>
-      <a href='#projects' className='sticky md:absolute top-20 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
+      <div className="absolute h-full bg-skin-secondary w-1 ml-16 sm:ml-8"></div>
+      <a href='#projects' className='sticky md:absolute top-20 sm:-left-8 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
         Projects
       </a>
-      <div className="w-full min-h-full pt-20">
+      <div className="w-full min-h-full pt-24">
         {/* Projects */}
         <div className='flex flex-col items-center w-full' data-aos="fade-right">
           {

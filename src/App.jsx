@@ -14,14 +14,12 @@ function App() {
 
     setTimeout(() => {
         setLoading(false);
-    }, 2000);
+    }, 1500);
 
     useEffect(() => {
         // Animation
         AOS.init({
-            // easing: 'ease-in-out',
             duration: 1000,
-            // once: false
         });
 
         if (localStorage.themeMode) {

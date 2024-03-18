@@ -7,12 +7,12 @@ function About() {
             <div className="absolute h-full w-full flex items-center opacity-5 overflow-hidden">
                 <label className='text-[22rem] uppercase text-skin-secondary scroll-animation'>About</label>
             </div>
-            <div className="h-full bg-skin-secondary w-1 ml-16 absolute"></div>
-            <a href='#about' className='sticky sm:absolute top-20 w-max h-0 text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
+            <div className="h-full bg-skin-secondary w-1 ml-16 sm:ml-8 absolute"></div>
+            <a href='#about' className='sticky sm:absolute sm:-left-8 top-20 w-max h-0 text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
                 About
             </a>
-            <div className="h-dvh flex justify-center items-center relative z-10 md:flex-col">
-                <div className='w-2/4 md:w-5/6 h-full md:h-1/2 flex justify-center items-end flex-col pr-12 md:pr-0 md:mt-20 md:ml-16'>
+            <div className="h-dvh w flex justify-center items-center relative z-10 md:flex-col">
+                <div className='w-2/4 md:w-full h-full md:h-1/2 flex justify-center sm:justify-end items-end flex-col pr-12 md:pr-0 md:mt-20 md:ml-16'>
                     <img className='w-3/4 md:w-full' src="/images/portfolioImg@2x.png" alt="logo" data-aos="fade-right" />
                 </div>
 
@@ -20,7 +20,7 @@ function About() {
                 {/* <div className='w-2/6 md:w-full h-3/4 m-10 md:h-1/2 pr-12 professional-photo md:pr-0 md:mt-20 md:pl-16'></div> */}
 
                 {/* Description */}
-                <div className='w-2/4 md:w-full md:h-1/2 pl-12 md:pr-8 md:pl-24'>
+                <div className='w-2/4 md:w-full flex justify-center flex-col md:h-1/2 pl-12 md:pr-8 md:pl-24'>
                     <div className='w-2/3 md:w-full flex flex-col justify-center items-center pb-6 delay-300' data-aos="fade-right" data-aos-delay="200">
                         <span className='text-skin-secondary font-semibold'>I am Mahesh Chavda, holding a Bachelor of Technology (B.Tech) degree
                             from RK University, Rajkot, and currently employed as a Software Engineer at

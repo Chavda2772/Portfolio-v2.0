@@ -49,13 +49,13 @@ function Skills() {
       <div className="absolute h-full w-full flex items-center opacity-5 overflow-hidden">
         <label className='text-[22rem] uppercase text-skin-secondary -ml-32 scroll-animation'>Skills</label>
       </div>
-      <div className="h-full bg-skin-secondary w-1 ml-16 absolute z-10"></div>
-      <a href='#skills' className='sticky top-20 w-max h-0 text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
+      <div className="h-full bg-skin-secondary w-1 ml-16 sm:ml-8 absolute z-10"></div>
+      <a href='#skills' className='sticky sm:absolute sm:-left-8 top-20 w-max h-0 text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
         Skills
       </a>
-      <div className="flex w-full min-h-dvh justify-center md:justify-start items-center relative md:flex-col md:mt-28">
-        <div className='w-1/3 h-dvh ml-36 md:ml-28 mt-8 relative flex items-start justify-center flex-col md:w-max md:h-1/2'>
-          <div className="h-3/6 md:h-full bg-skin-secondary w-1 ml-1 absolute mt-8"></div>
+      <div className="flex w-full h-dvh items-center justify-center md:justify-start relative md:flex-col">
+        <div className='w-1/3 sm:w-2/3 h-dvh ml-36 sm:ml-10 mt-8 sm:mt-20 relative flex items-start justify-center flex-col md:w-max md:h-1/2'>
+          <div className="h-3/6 md:h-4/6 bg-skin-secondary w-1 ml-1 absolute mt-8"></div>
           {
             skillsDetails.map((item, idx) => {
               let classList = "";

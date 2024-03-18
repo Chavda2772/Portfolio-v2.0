@@ -4,7 +4,7 @@ import './Loading.css'
 function Loading() {
   return (
     <div
-      className='w-full h-dvh flex justify-center items-center bg-skin-primary'
+      className='w-full h-dvh flex justify-center items-center bg-skin-primary overflow-hidden'
       data-aos="fade"
       data-aos-duration="200"
     >
