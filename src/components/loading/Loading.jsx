@@ -3,8 +3,13 @@ import './Loading.css'
 
 function Loading() {
   return (
-    <div className='w-full h-dvh flex justify-center items-center bg-skin-primary'>
-      <svg className='fill-skin-secondary'
+    <div
+      className='w-full h-dvh flex justify-center items-center bg-skin-primary'
+      data-aos="fade"
+      data-aos-duration="200"
+    >
+      <svg 
+        className='fill-skin-secondary animate-ping'
         height="40"
         width="40"
         xmlns="http://www.w3.org/2000/svg"

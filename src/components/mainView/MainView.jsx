@@ -1,5 +1,4 @@
 // imports
-import React from 'react';
 import "./MainView.css"
 
 import Navbar from '../navbar/Navbar';
@@ -10,42 +9,19 @@ import Projects from '../projects/Projects';
 import Contact from '../contact/Contact';
 import Footer from '../footer/Footer';
 
-class MainView extends React.Component {
-    constructor(props) {
-        super(props);
-        this.handleLoad = this.handleLoad.bind(this);
-    }
+function MainView() {
 
-    componentDidMount() {
-        window.addEventListener('load', this.handleLoad);
-    }
-
-    handleLoad() {
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach((entry) => {
-                if (entry.isIntersecting)
-                    entry.target.classList.add('custom-show')
-                else
-                    entry.target.classList.remove('custom-show')
-            })
-        });
-
-        let hiddenElement = document.querySelectorAll('.custom-hidden');
-        hiddenElement.forEach((el) => observer.observe(el));
-    }
-    render() {
-        return (
-            <>
-                <Navbar />
-                <Home />
-                <About />
-                <Skills />
-                <Projects />
-                <Contact />
-                <Footer />
-            </>
-        )
-    }
+    return (
+        <>
+            <Navbar />
+            <Home />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+            <Footer />
+        </>
+    )
 }
 
 

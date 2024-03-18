@@ -2,19 +2,28 @@
 import MainView from './components/mainView/MainView';
 import Loading from './components/loading/Loading';
 import { useState, useEffect } from 'react';
+import AOS from 'aos';
 
 // Styles
 import './App.css';
+import 'aos/dist/aos.css'
 
 // Components design
 function App() {
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
 
     setTimeout(() => {
         setLoading(false);
-    }, 1500);
+    }, 2000);
 
     useEffect(() => {
+        // Animation
+        AOS.init({
+            // easing: 'ease-in-out',
+            duration: 1000,
+            // once: false
+        });
+
         if (localStorage.themeMode) {
             document.documentElement.classList.add(localStorage.themeMode);
         }
@@ -24,7 +33,7 @@ function App() {
 
         let bodyEl = document.body;
         bodyEl.classList = [];
-        bodyEl.classList.add(localStorage.themeColor ?? 'theme-default' );
+        bodyEl.classList.add(localStorage.themeColor ?? 'theme-default');
     }, []);
 
     return (

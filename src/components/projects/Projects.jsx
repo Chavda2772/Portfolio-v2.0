@@ -45,7 +45,7 @@ function Projects() {
       </a>
       <div className="w-full min-h-full pt-20">
         {/* Projects */}
-        <div className='flex flex-col items-center w-full'>
+        <div className='flex flex-col items-center w-full' data-aos="fade-right">
           {
             projectList.map((project, idx) => {
               return <Project
@@ -65,7 +65,9 @@ function Projects() {
           }
         </div>
         <div className='w-full flex justify-center'>
-          <button className='bg-skin-secondary p-8 pt-3 m-6 pb-3 inline-flex rounded-md text-skin-primary z-10 hover:bg-skin-secondary/80 hover:text-skin-action active:scale-95 custom-hidden'>
+          <button className='bg-skin-secondary p-8 pt-3 m-6 pb-3 inline-flex rounded-md text-skin-primary z-10 hover:bg-skin-secondary/80 hover:text-skin-action active:scale-95'
+            data-aos="fade-right"
+          >
             Noteworthy Projects
             <FaLongArrowAltRight className='ml-6 text-2xl' />
           </button>

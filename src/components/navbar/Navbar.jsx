@@ -64,7 +64,11 @@ function Navbar() {
         <>
             <nav className="fixed w-full backdrop-blur-sm bg-skin-secondary/35 rounded-b-xl z-20">
                 <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
-                    <a href='#' className="ml-8 custom-hidden">
+                    <a
+                        href='#'
+                        className="ml-8"
+                        data-aos="fade-right"
+                    >
                         {/* Logo */}
                         <svg className='fill-skin-secondary hover:fill-skin-action'
                             height="40"
@@ -78,10 +82,18 @@ function Navbar() {
                     </a>
                     <div className="flex items-center space-x-6">
                         {/* Theme */}
-                        <button onClick={changeTheme} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm rounded-lg hover:bg-skin-primary focus:outline-none custom-hidden">
-                            <GiPaintRoller className='text-3xl text-skin-secondary' />
+                        <button onClick={changeTheme} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm rounded-lg hover:bg-skin-primary focus:outline-none">
+                            <GiPaintRoller
+                                className='text-3xl text-skin-secondary'
+                                data-aos="fade-right"
+                                data-aos-delay="200"
+                            />
                         </button>
-                        <button onClick={onChangeMode} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm rounded-lg hover:bg-skin-primary focus:outline-none custom-hidden">
+                        <button
+                            onClick={onChangeMode} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm rounded-lg hover:bg-skin-primary focus:outline-none"
+                            data-aos="fade-right"
+                            data-aos-delay="300"
+                        >
                             {!isDark
                                 // Moon
                                 ? <FaMoon className='text-3xl fill-skin-secondary' />
@@ -89,7 +101,13 @@ function Navbar() {
                                 : <FaSun className='text-3xl fill-skin-secondary' />
                             }
                         </button>
-                        <button onClick={onVolumeModeChange} type="button" className="inline-flex items-center justify-center p-2 w-10 h-10 rounded-lg hover:bg-skin-primary focus:outline-none custom-hidden">
+                        <button
+                            onClick={onVolumeModeChange}
+                            type="button"
+                            className="inline-flex items-center justify-center p-2 w-10 h-10 rounded-lg hover:bg-skin-primary focus:outline-none"
+                            data-aos="fade-right"
+                            data-aos-delay="400"
+                        >
                             {!isMute
                                 // Volumte Icon
                                 ? <svg className='fill-skin-secondary' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 48 48" version="1.1">
@@ -102,7 +120,16 @@ function Navbar() {
                             }
                         </button>
                         {/* skin-action Menu */}
-                        <button onClick={toggleMenu} data-collapse-toggle="navbar-hamburger" type="button" className="p-2 w-10 h-10 text-skin-secondary focus:outline-none hover:bg-skin-primary rounded-md custom-hidden" aria-controls="navbar-hamburger" aria-expanded="false">
+                        <button
+                            onClick={toggleMenu}
+                            data-collapse-toggle="navbar-hamburger"
+                            type="button"
+                            className="p-2 w-10 h-10 text-skin-secondary focus:outline-none hover:bg-skin-primary rounded-md"
+                            aria-controls="navbar-hamburger"
+                            aria-expanded="false"
+                            data-aos="fade-right"
+                            data-aos-delay="500"
+                        >
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 17 14">
                                 <path stroke="currentColor" strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M1 1h15M1 7h15M1 13h15" />
                             </svg>

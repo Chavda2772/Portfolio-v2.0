@@ -13,11 +13,21 @@ function Contact() {
       </a>
       <div className='relative'>
         <div className="w-full h-dvh flex justify-center flex-col items-center relative z-10 md:m-auto">
-          <div className='w-2/3 md:w-2/4 flex flex-col pb-10 text-3xl md:text-2xl custom-hidden'>
-            <label className='text-center font-semibold text-skin-secondary'>My inbox is always open. Whether you have a question or
+          <div className='w-2/3 md:w-2/4 flex flex-col pb-10 text-3xl md:text-2xl'>
+            <label
+              className='text-center font-semibold text-skin-secondary'
+              data-aos="fade-right"
+            >
+              My inbox is always open. Whether you have a question or
               just want to say hi, I will try my best to get back to you!</label>
           </div>
-          <button className='bg-skin-secondary p-8 pt-3 pb-3 rounded-md text-skin-primary hover:bg-skin-secondary/80 active:scale-95 custom-hidden'>Say Hello !!</button>
+          <button
+            className='bg-skin-secondary p-8 pt-3 pb-3 rounded-md text-skin-primary hover:bg-skin-secondary/80 active:scale-95'
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
+            Say Hello !!
+          </button>
         </div>
       </div>
     </section>
