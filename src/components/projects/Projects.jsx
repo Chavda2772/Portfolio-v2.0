@@ -19,10 +19,10 @@ function Projects() {
     {
       name: 'Chit Chat',
       imgSource: '/images/Spyglass@2x.png',
-      discription: 'Chat application created.',
+      discription: 'A dynamic messaging app featuring real-time communication, user status indicators, Google login integration, and customizable themes for a personalized experience.',
       gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
       externalLink: 'https://chitchat.chavdamahesh.com/home',
-      techList: ['Vue JS', 'Node JS', 'Socket IO', 'MySql']
+      techList: ['Vue JS', 'Node JS', 'Firebase', 'Socket IO', 'MySql']
     },
     {
       name: 'Stash Note',

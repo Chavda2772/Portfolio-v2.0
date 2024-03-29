@@ -137,7 +137,10 @@ function Navbar() {
                     </div>
                 </div>
             </nav >
-            <div className={`fixed w-full h-full backdrop-blur-3xl bg-skin-secondary/10 z-30 ${isMenuVisible ? '' : 'hidden'}`} id="navbar-hamburger">
+            <div
+                className={`fixed w-full h-full backdrop-blur-3xl bg-skin-secondary/10 z-30 ${isMenuVisible ? '' : 'hidden'}`}
+                id="navbar-hamburger"
+            >
                 <div className="flex items-center justify-end h-12">
                     <button onClick={toggleMenu} type="button" className='mr-12 mt-5'>
                         <svg className='h-10 fill-skin-secondary hover:fill-skin-action' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" version="1.1">
