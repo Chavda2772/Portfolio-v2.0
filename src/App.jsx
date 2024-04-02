@@ -22,6 +22,14 @@ function App() {
             duration: 1000,
         });
 
+        // animation before end of element fix
+        let scrollRef = 0;
+
+        window.addEventListener('scroll', function () {
+            // increase value up to 10, then refresh AOS
+            scrollRef <= 10 ? scrollRef++ : AOS.refresh();
+        });
+
         // Mode 
         if (localStorage.themeMode)
             document.documentElement.classList.add(localStorage.themeMode);

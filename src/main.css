@@ -10,6 +10,27 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Scrollbar Design */
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgb(var(--color-primary));
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(var(--color-secondary)); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(var(--color-action)); 
+}
+
 @layer base {
   .theme-default {
     --color-primary: 202, 240, 248;
