@@ -170,8 +170,8 @@ function Navbar() {
                 </div>
             </nav >
             <div
-                className={`fixed w-full h-full backdrop-blur-3xl bg-skin-secondary/10 z-30 ${isMenuVisible ? '' : 'hidden'}`}
-                id="navbar-hamburger"
+                className={`fixed w-full h-full backdrop-blur-3xl bg-skin-secondary/10 z-30 ${isMenuVisible ? 'show' : 'hide'}`}
+                id="navbar-hamburger"                
             >
                 <div className="flex items-center justify-end h-12">
                     <button onClick={toggleMenu} type="button" className='mr-12 mt-5'>
