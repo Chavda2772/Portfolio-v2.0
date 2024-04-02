@@ -46,7 +46,11 @@ function Home() {
         </div>
         {/* Image */}
         <div className='relative w-1/2 md:w-full h-full md:h-1/2 sm:mt-20 flex justify-end md:justify-end items-start md:items-center flex-col overflow-hidden'>
-          <img className='w-3/5 md:w-2/3 drop-shadow-custom' src="/images/ProfessionalPhoto@2x.png" alt="logo" data-aos="fade-right" data-aos-delay="300" />
+          <img
+            className='w-3/5 md:w-2/3 drop-shadow-custom' src="/images/ProfessionalPhoto@2x.png"
+            alt="logo"
+            data-aos="fade"
+            data-aos-delay="300" />
           <div className='absolute h-3/6 w-3/5 bg-shadow-custom md:w-5/6'></div>
         </div>
 
