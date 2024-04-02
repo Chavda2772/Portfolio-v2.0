@@ -6,7 +6,7 @@ import { FaSun } from "react-icons/fa6";
 import { GiPaintRoller } from "react-icons/gi";
 
 // react
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 function Navbar() {
     // variables
@@ -16,6 +16,26 @@ function Navbar() {
     const [isMenuVisible, setIsMenuVisible] = useState(false);
 
     const themeList = ['theme-default', 'theme-swiss', 'theme-neon'];
+
+    useEffect(() => {
+        let muteState = localStorage.mute == 'true';
+        setCurrentTheme(localStorage.themeColor);
+        setIsDark(localStorage.themeMode == 'dark');
+        setIsMute(muteState);
+
+        // Audio playback
+        let audioEl = document.getElementById('elAudio');
+
+        if (!muteState) {
+            audioEl.play().catch(() => {
+                document.addEventListener("click", () => {
+                    audioEl.play();
+                }, { once: true });
+            });
+
+            localStorage.mute = false;
+        }
+    }, []);
 
     // Methods
     const onChangeMode = () => {
@@ -35,7 +55,15 @@ function Navbar() {
     }
 
     const onVolumeModeChange = () => {
-        setIsMute(!isMute);
+        let audioEl = document.getElementById('elAudio');
+        let mute = !isMute;
+
+        // Audio play / pause
+        if (mute) audioEl.pause();
+        else audioEl.play();
+
+        setIsMute(mute);
+        localStorage.mute = mute;
     }
     const toggleMenu = () => {
         setIsMenuVisible(!isMenuVisible);
@@ -119,6 +147,10 @@ function Navbar() {
                                 </svg>
                             }
                         </button>
+                        {/* Audio Control */}
+                        <audio className='hidden' id='elAudio' controls autoPlay>
+                            <source src="/assets/NatureAndBackground.mp3" type="audio/mpeg" />
+                        </audio>
                         {/* skin-action Menu */}
                         <button
                             onClick={toggleMenu}
