@@ -180,7 +180,7 @@ function Navbar() {
                         </svg>
                     </button>
                 </div>
-                <ul className="h-full flex flex-col items-center justify-evenly text-7xl">
+                <ul className="h-full flex flex-col items-center caudex-regular-italic justify-evenly text-7xl">
                     <li>
                         <a href="#" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action" aria-current="page">Home</a>
                     </li>

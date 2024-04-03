@@ -23,13 +23,13 @@ export default {
       margin: {
         13: '3.2rem',
       },
+      fontFamily: {
+        ducados: 'Ducados',
+      },
       borderWidth: {
         15: '15px',
         30: '30px',
-      },
-      fontSize: {
-        '24rem': '24rem',
-      },
+      }
     },
     screens: {
       xl: { max: '1279px' },

@@ -4,11 +4,11 @@ import './Contact.css'
 function Contact() {
   return (
     <section id='contact' className='relative bg-skin-primary w-full h-dvh'>
-      <div className='absolute h-full w-full flex items-center opacity-5 overflow-hidden'>
-        <label className='text-[22rem] text-skin-secondary uppercase scroll-animation-contact'>Contact</label>
+      <div className='absolute h-full w-full flex items-center justify-center opacity-5 overflow-hidden'>
+        <label className='text-[28rem] tracking-widest italic font-ducados pt-36 text-skin-secondary uppercase scroll-animation-contact'>Contact</label>
       </div>
       <div className="h-3/5 bg-skin-secondary w-1 ml-16 sm:ml-8 absolute z-[2]"></div>
-      <a href='#contact' className='sticky md:absolute top-20 sm:-ml-10 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
+      <a href='#contact' className='sticky italic md:absolute top-20 sm:-ml-10 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
         Contact
       </a>
       <div className='relative'>
