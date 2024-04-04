@@ -40,18 +40,17 @@ function Home() {
       <div className="w-full h-dvh flex justify-center items-end md:flex-col-reverse relative z-[2]">
         {/* Description */}
         <div className='w-1/2 md:w-full h-full md:h-1/2 flex justify-end md:justify-center' >
-          <div className='flex flex-col justify-center items-start md:justify-center md:items-center sm:pr-0'>
-            <div className='ml-6 mb-5 flex flex-col relative' data-aos="fade-right" data-aos-delay="400">
-              <span className='text-skin-primary bg-skin-secondary p-2 pr-4 pl-4 rounded-md z-10'>It&apos;s me</span>
-              <span className='absolute right-1 -bottom-4 w-0 h-0 border-l-15 border-l-transparent border-r-15 border-r-transparent border-t-30 border-t-skin-secondary'>
-              </span>
+          <div className='flex flex-col justify-center items-start md:justify-start sm:pt-8 md:items-center sm:pr-0'>
+            <div className='ml-6 sm:ml-2 mb-5 flex flex-col relative' data-aos="fade-right" data-aos-delay="400">
+              <span className='text-skin-primary bg-skin-secondary p-2 pr-4 pl-4 font-semibold rounded-md z-10'>It&apos;s me</span>
+              <span className='absolute right-1 -bottom-4 w-0 h-0 border-l-15 border-l-transparent border-r-15 border-r-transparent border-t-30 border-t-skin-secondary'></span>
             </div>
             <span className='text-skin-secondary text-6xl font-semibold md:text-4xl pb-3 sm:pb-10' data-aos="fade-right" data-aos-delay="500">Mahesh Chavda</span>
-            <span className='text-skin-secondary text-left text-xl' data-aos="fade-right" data-aos-delay="600">I am Software Engineer and<br />I build the things for web.</span>
+            <span className='text-skin-secondary text-left text-xl font-semibold' data-aos="fade-right" data-aos-delay="600">I am Software Engineer and<br />I build the things for web.</span>
           </div>
         </div>
         {/* Image */}
-        <div className='relative w-1/2 md:w-full h-full md:h-1/2 sm:mt-20 flex justify-end md:justify-end items-start md:items-center flex-col overflow-hidden'>
+        <div className='relative w-1/2 md:w-full h-full md:h-4/6 sm:mt-20 flex justify-end md:justify-end items-start md:items-center flex-col overflow-hidden'>
           <img
             className='w-3/5 md:w-2/3 drop-shadow-custom' src="/images/ProfessionalPhoto@2x.png"
             alt="logo" />

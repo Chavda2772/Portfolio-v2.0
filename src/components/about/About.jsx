@@ -20,9 +20,9 @@ function About() {
                 {/* <div className='w-2/6 md:w-full h-3/4 m-10 md:h-1/2 pr-12 professional-photo md:pr-0 md:mt-20 md:pl-16'></div> */}
 
                 {/* Description */}
-                <div className='w-2/4 md:w-full flex justify-center flex-col md:h-1/2 pl-12 md:pr-8 md:pl-24'>
+                <div className='w-2/4 md:w-full flex justify-start flex-col md:h-1/2 sm:mt-2 pl-12 md:pr-8 md:pl-24'>
                     <div className='w-2/3 md:w-full flex flex-col justify-center items-center pb-6' data-aos="fade-right" data-aos-delay="200">
-                        <span className='text-skin-secondary sm:font-semibold'>I am Mahesh Chavda, holding a Bachelor of Technology (B.Tech) degree
+                        <span className='text-skin-secondary text-lg sm:font-semibold'>I am Mahesh Chavda, holding a Bachelor of Technology (B.Tech) degree
                             from RK University, India, and currently employed as a senior software engineer at
                             Knovos India Pvt. Ltd. Based in India, I am dedicated to upgrading my skills
                             in JavaScript frameworks, .NET Core 8.0 and other emerging technologies.</span>

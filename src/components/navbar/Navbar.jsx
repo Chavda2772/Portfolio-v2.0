@@ -108,7 +108,7 @@ function Navbar() {
                             <path d="M112.05,263.81c0,43.22-.16,86.44-.06,129.66a20.33,20.33,0,0,1-6.53,15.62c-12.3,12-24.41,24.21-36.49,36.43-3.39,3.43-6.9,6.47-12,4.79-5.81-1.89-4.9-7-4.9-11.57Q52,265,51.84,91.28c0-10,4.07-13.83,13.43-13.49,2.09.08,4.19.09,6.29.14,18.43.5,38.87-5.47,54.76,2.22,15.72,7.61,27.07,24.39,40.14,37.36,20.54,20.37,40.73,41.1,61.45,61.29,8.16,7.95,8.68,14.6-.34,22.52a175,175,0,0,0-19.93,20.08c-8.09,9.84-14.63,8.92-22.66.73-21.73-22.14-44-43.77-65.88-65.76-2.88-2.89-3.23-2.3-7-8.67C112.05,186.93,112.07,224.58,112.05,263.81Z"
                                 transform="translate(-51.84 -76.19)" /></svg>
                     </a>
-                    <div className="flex items-center space-x-6">
+                    <div className="flex items-center space-x-6 mr-6">
                         {/* Theme */}
                         <button onClick={changeTheme} type="button" className="inline-flex items-center justify-center p-2 w-10 h-11 text-sm rounded-lg hover:bg-skin-primary focus:outline-none">
                             <GiPaintRoller
@@ -148,7 +148,7 @@ function Navbar() {
                             }
                         </button>
                         {/* Audio Control */}
-                        <audio className='hidden' id='elAudio' controls autoPlay>
+                        <audio className='hidden' id='elAudio' controls>
                             <source src="/assets/NatureAndBackground.mp3" type="audio/mpeg" />
                         </audio>
                         {/* skin-action Menu */}
@@ -156,7 +156,7 @@ function Navbar() {
                             onClick={toggleMenu}
                             data-collapse-toggle="navbar-hamburger"
                             type="button"
-                            className="p-2 w-10 h-10 text-skin-secondary focus:outline-none hover:bg-skin-primary rounded-md"
+                            className="p-2 w-10 h-10 text-skin-secondary rounded-md focus:outline-none hover:bg-skin-primary"
                             aria-controls="navbar-hamburger"
                             aria-expanded="false"
                             data-aos="fade-right"
@@ -173,14 +173,14 @@ function Navbar() {
                 className={`fixed w-full h-full backdrop-blur-3xl bg-skin-secondary/10 z-30 ${isMenuVisible ? 'show' : 'hide'}`}
                 id="navbar-hamburger"                
             >
-                <div className="flex items-center justify-end h-12">
-                    <button onClick={toggleMenu} type="button" className='mr-12 mt-5'>
+                <div className="flex items-center justify-end">
+                    <button onClick={toggleMenu} type="button" className='mr-6 p-4'>
                         <svg className='h-10 fill-skin-secondary hover:fill-skin-action' xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 52 52" version="1.1">
                             <path d="M 43.46875 39.28125 L 39.273438 43.46875 C 38.507813 44.242188 37.257813 44.242188 36.484375 43.46875 L 26 32.992188 L 15.523438 43.46875 C 14.75 44.242188 13.492188 44.242188 12.726563 43.46875 L 8.53125 39.28125 C 7.757813 38.507813 7.757813 37.257813 8.53125 36.484375 L 19.007813 26 L 8.53125 15.523438 C 7.765625 14.742188 7.765625 13.484375 8.53125 12.726563 L 12.726563 8.53125 C 13.492188 7.757813 14.75 7.757813 15.523438 8.53125 L 26 19.015625 L 36.484375 8.53125 C 37.257813 7.757813 38.515625 7.757813 39.273438 8.53125 L 43.46875 12.71875 C 44.242188 13.492188 44.242188 14.75 43.476563 15.523438 L 32.992188 26 L 43.46875 36.484375 C 44.242188 37.257813 44.242188 38.507813 43.46875 39.28125 Z " />
                         </svg>
                     </button>
                 </div>
-                <ul className="h-full flex flex-col items-center caudex-regular-italic justify-evenly text-7xl">
+                <ul className="h-full flex flex-col items-center font-semibold caudex-regular-italic justify-evenly text-7xl">
                     <li>
                         <a href="#" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action" aria-current="page">Home</a>
                     </li>
