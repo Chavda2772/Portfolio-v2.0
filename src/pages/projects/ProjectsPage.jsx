@@ -1,11 +1,9 @@
-// import
-import './Projects.css'
+import Project from '../../components/projects/project';
+import Navbar from '../../components/navbar/Navbar';
 
-import Project from './project';
-import { FaLongArrowAltRight } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
-function Projects() {
+function ProjectsPage() {
   let projectList = [
     {
       name: 'Spyglass',
@@ -35,16 +33,13 @@ function Projects() {
     }
   ];
 
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
-    <div id='projects' className='relative bg-skin-primary'>
-      <div className="absolute h-full w-full flex items-start opacity-5 overflow-hidden">
-        <label className='text-[32rem] tracking-widest italic font-ducados uppercase text-skin-secondary scroll-animation'>projects</label>
-      </div>
-      <div className="absolute h-full bg-skin-secondary w-1 ml-16 sm:ml-8"></div>
-      <a href='#projects' className='sticky italic md:absolute top-20 sm:-left-8 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
-        Projects
-      </a>
-      <div className="w-full min-h-full pt-24">
+    <>
+      <Navbar />
+      <div className="w-full min-h-full bg-skin-primary pt-44">
         {/* Projects */}
         <div className='flex flex-col items-center w-full' data-aos="fade-right">
           {
@@ -65,19 +60,10 @@ function Projects() {
             })
           }
         </div>
-        <div className='w-full flex justify-center'>
-          <Link to="/projects">
-            <button className='bg-skin-secondary p-8 pt-3 m-6 pb-3 inline-flex rounded-md text-skin-primary z-10 hover:bg-skin-secondary/80 hover:text-skin-action active:scale-95'
-              data-aos="fade-right"
-            >
-              Noteworthy Projects
-              <FaLongArrowAltRight className='ml-6 text-2xl' />
-            </button>
-          </Link>
-        </div>
       </div>
-    </div>
-  );
+    </>
+  )
 }
 
-export default Projects;
+
+export default ProjectsPage;

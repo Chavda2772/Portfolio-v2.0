@@ -7,6 +7,7 @@ import { GiPaintRoller } from "react-icons/gi";
 
 // react
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 function Navbar() {
     // variables
@@ -90,7 +91,7 @@ function Navbar() {
     // Element
     return (
         <>
-            <nav className="fixed w-full backdrop-blur-sm bg-skin-secondary/35 rounded-b-xl z-20">
+            <nav className="fixed w-full backdrop-blur-xl bg-skin-secondary/35 rounded-b-xl z-20">
                 <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
                     <a
                         href='#'
@@ -171,7 +172,7 @@ function Navbar() {
             </nav >
             <div
                 className={`fixed w-full h-full backdrop-blur-3xl bg-skin-secondary/10 z-30 ${isMenuVisible ? 'show' : 'hide'}`}
-                id="navbar-hamburger"                
+                id="navbar-hamburger"
             >
                 <div className="flex items-center justify-end">
                     <button onClick={toggleMenu} type="button" className='mr-6 p-4'>
@@ -185,7 +186,12 @@ function Navbar() {
                         <a href="#" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <a href="#about" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">About</a>
+                        <Link to={{
+                            pathname: '/',
+                            hash: "#about",
+                        }}>
+                            <a href="#about" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">About</a>
+                        </Link>
                     </li>
                     <li>
                         <a href="#skills" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">Skills</a>

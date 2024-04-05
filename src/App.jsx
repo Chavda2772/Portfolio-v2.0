@@ -1,7 +1,12 @@
 // Components
-import MainView from './components/mainView/MainView';
+import MainView from './pages/mainView/MainView';
+import Projects from './pages/projects/ProjectsPage';
+
+// Components
 import Loading from './components/loading/Loading';
+
 import { useState, useEffect } from 'react';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AOS from 'aos';
 
 // Styles
@@ -51,7 +56,16 @@ function App() {
     return (
         <>
             {
-                loading ? <Loading /> : <MainView />
+                loading
+                    ? <Loading />
+                    : (
+                        <BrowserRouter>
+                            <Routes>
+                                <Route path="projects" element={<Projects />} />
+                                <Route path="*" element={<MainView />} />
+                            </Routes>
+                        </BrowserRouter>
+                    )
             }
         </>
     )
