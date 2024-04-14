@@ -186,12 +186,17 @@ function Navbar() {
                         <a href="#" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action" aria-current="page">Home</a>
                     </li>
                     <li>
-                        <Link to={{
-                            pathname: '/',
-                            hash: "#about",
-                        }}>
-                            <a href="#about" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">About</a>
-                        </Link>
+                        <a
+                            className='text-skin-secondary hover:text-skin-action'
+                            path="#about"
+                            onClick={toggleMenu}
+                        // to={{
+                        //     pathname: '/',
+                        //     hash: "#about",
+                        // }}
+                        >
+                            About
+                        </a>
                     </li>
                     <li>
                         <a href="#skills" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">Skills</a>

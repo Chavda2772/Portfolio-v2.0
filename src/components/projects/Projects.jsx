@@ -9,7 +9,7 @@ function Projects() {
   let projectList = [
     {
       name: 'Spyglass',
-      imgSource: '/images/Spyglass@2x.png',
+      imgSource: '/images/SpyglassFilter.png',
       gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
       chromeLink: 'https://chromewebstore.google.com/detail/lnoocafdflgdbjjhcpkajhjchmddhgoh',
       edgeLink: 'https://microsoftedge.microsoft.com/addons/detail/extjs-spyglass/gmnhihnnhiighhgbjlbnfbeehbgeigjn',
@@ -22,8 +22,8 @@ function Projects() {
       imgSource: '/images/Spyglass@2x.png',
       discription: 'A dynamic messaging app featuring real-time communication, user status indicators, Google login integration, and customizable themes for a personalized experience.',
       gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
-      externalLink: 'https://chitchat.chavdamahesh.com/home',
-      techList: ['Vue JS', 'Node JS', 'Firebase', 'Socket IO', 'MySql']
+      externalLink: 'https://chitchat.chavdamahesh.com',
+      techList: ['Vue JS', 'Node JS', 'Express JS', 'Firebase', 'Socket IO', 'MySql']
     },
     {
       name: 'Stash Note',
