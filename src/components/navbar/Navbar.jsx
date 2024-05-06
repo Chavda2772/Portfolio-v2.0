@@ -7,9 +7,12 @@ import { GiPaintRoller } from "react-icons/gi";
 
 // react
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function Navbar() {
+    // global variables
+    const navigate = useNavigate();
+
     // variables
     const [isDark, setIsDark] = useState(false);
     const [currentTheme, setCurrentTheme] = useState('');
@@ -68,6 +71,13 @@ function Navbar() {
     }
     const toggleMenu = () => {
         setIsMenuVisible(!isMenuVisible);
+    }
+
+    const navigateItem = (e) => {
+        toggleMenu();
+
+        let url = new URL(e.target.href);
+        navigate('/'.concat(url.hash))
     }
 
     // Helper function
@@ -183,29 +193,25 @@ function Navbar() {
                 </div>
                 <ul className="h-full flex flex-col items-center font-semibold caudex-regular-italic justify-evenly text-7xl">
                     <li>
-                        <a href="#" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action" aria-current="page">Home</a>
+                        <a href="#" onClick={navigateItem} className="text-skin-secondary hover:text-skin-action" aria-current="page">Home</a>
                     </li>
                     <li>
                         <a
                             className='text-skin-secondary hover:text-skin-action'
-                            path="#about"
-                            onClick={toggleMenu}
-                        // to={{
-                        //     pathname: '/',
-                        //     hash: "#about",
-                        // }}
+                            href='#about'
+                            onClick={navigateItem}
                         >
                             About
                         </a>
                     </li>
                     <li>
-                        <a href="#skills" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">Skills</a>
+                        <a href="#skills" onClick={navigateItem} className="text-skin-secondary hover:text-skin-action">Skills</a>
                     </li>
                     <li>
-                        <a href="#projects" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action">Projects</a>
+                        <a href="#projects" onClick={navigateItem} className="text-skin-secondary hover:text-skin-action">Projects</a>
                     </li>
                     <li className='mb-20'>
-                        <a href="#contact" onClick={toggleMenu} className="text-skin-secondary hover:text-skin-action mb-10">Contact</a>
+                        <a href="#contact" onClick={navigateItem} className="text-skin-secondary hover:text-skin-action mb-10">Contact</a>
                     </li>
                 </ul>
             </div>
