@@ -2,13 +2,13 @@
 import './Projects.css'
 
 import Project from './project';
-import { FaLongArrowAltRight } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 function Projects() {
   let projectList = [
     {
       name: 'Spyglass',
-      imgSource: '/images/Spyglass@2x.png',
+      imgSource: '/images/SpyglassFilter.png',
       gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
       chromeLink: 'https://chromewebstore.google.com/detail/lnoocafdflgdbjjhcpkajhjchmddhgoh',
       edgeLink: 'https://microsoftedge.microsoft.com/addons/detail/extjs-spyglass/gmnhihnnhiighhgbjlbnfbeehbgeigjn',
@@ -21,8 +21,8 @@ function Projects() {
       imgSource: '/images/Spyglass@2x.png',
       discription: 'A dynamic messaging app featuring real-time communication, user status indicators, Google login integration, and customizable themes for a personalized experience.',
       gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
-      externalLink: 'https://chitchat.chavdamahesh.com/home',
-      techList: ['Vue JS', 'Node JS', 'Firebase', 'Socket IO', 'MySql']
+      externalLink: 'https://chitchat.chavdamahesh.com',
+      techList: ['Vue JS', 'Node JS', 'Express JS', 'Firebase', 'Socket IO', 'MySql']
     },
     {
       name: 'Stash Note',
@@ -36,11 +36,11 @@ function Projects() {
 
   return (
     <div id='projects' className='relative bg-skin-primary'>
-      <div className="absolute h-full w-full flex items-center opacity-5 overflow-hidden">
-        <label className='text-[22rem] uppercase text-skin-secondary scroll-animation'>projects</label>
+      <div className="absolute h-full w-full flex items-start opacity-5 overflow-hidden">
+        <label className='text-[32rem] tracking-widest italic font-ducados uppercase text-skin-secondary scroll-animation'>projects</label>
       </div>
       <div className="absolute h-full bg-skin-secondary w-1 ml-16 sm:ml-8"></div>
-      <a href='#projects' className='sticky md:absolute top-20 sm:-left-8 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
+      <a href='#projects' className='sticky italic md:absolute top-20 sm:-left-8 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
         Projects
       </a>
       <div className="w-full min-h-full pt-24">
@@ -65,12 +65,15 @@ function Projects() {
           }
         </div>
         <div className='w-full flex justify-center'>
-          <button className='bg-skin-secondary p-8 pt-3 m-6 pb-3 inline-flex rounded-md text-skin-primary z-10 hover:bg-skin-secondary/80 hover:text-skin-action active:scale-95'
-            data-aos="fade-right"
-          >
-            Noteworthy Projects
-            <FaLongArrowAltRight className='ml-6 text-2xl' />
-          </button>
+          <Link to="/projects">
+            <button href="#about"
+              className="btn p-10 pt-3 pb-3 md:w-full md:mt-12"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
+              Noteworthy Projects
+            </button>
+          </Link>
         </div>
       </div>
     </div>

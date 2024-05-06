@@ -1,0 +1,27 @@
+.show {
+  display: block;
+  animation-name: fade-in-anim;
+  animation-duration: 0.25s;
+}
+
+.hide {
+  display: none;
+}
+
+@keyframes fade-in-anim {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.caudex-regular-italic {
+  font-family: "Caudex", serif;
+  font-weight: 400;
+  font-style: italic;
+}

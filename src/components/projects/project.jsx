@@ -17,7 +17,7 @@ function Project(project) {
       className={`flex justify-center items-center w-3/5 h-2/4 m-14 relative bg-skin-secondary p-6 rounded-lg ${isInverse ? ' flex-row-reverse' : ''}`}
       data-aos={`${isInverse ? 'fade-left' : 'fade-right'}`}
     >
-      <h3 className={`absolute text-8xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-14 border-2 border-skin-secondary -right-12`}>
+      <h3 className={`absolute text-8xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-20 border-2 border-skin-secondary -right-12`}>
         {projectCount}
       </h3>
       <div className='w-1/2 sm:w-full h-full flex justify-center flex-col'>
@@ -28,14 +28,14 @@ function Project(project) {
           <img className='object-cover w-full rounded-md' src={project.imgSource} alt="" />
         </div>
         <div>
-          <p className={`bg-skin-primary text-skin-secondary p-3 min-h-28 flex items-center sm:text-center font-semibold`}>
+          <p className={`bg-skin-primary text-skin-secondary p-3 min-h-28 flex items-center sm:text-center sm:font-semibold`}>
             {discription}
           </p>
         </div>
         <div className={`pt-3 flex sm:justify-center flex-row flex-wrap ${isInverse ? 'pl-6 sm:pl-0' : ''}`}>
           {
             techList?.map((itm, idx) => {
-              return <span key={idx} className='pr-3 text-skin-primary cursor-pointer hover:text-skin-action'>{itm}</span>;
+              return <span key={idx} className='pr-3 text-skin-primary cursor-pointer hover:text-skin-action font-semibold'>{itm}</span>;
             })
           }
         </div>
