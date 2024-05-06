@@ -2,7 +2,6 @@
 import './Projects.css'
 
 import Project from './project';
-import { FaLongArrowAltRight } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 function Projects() {
@@ -67,11 +66,12 @@ function Projects() {
         </div>
         <div className='w-full flex justify-center'>
           <Link to="/projects">
-            <button className='bg-skin-secondary p-8 pt-3 m-6 pb-3 inline-flex rounded-md text-skin-primary z-10 hover:bg-skin-secondary/80 hover:text-skin-action active:scale-95'
+            <button href="#about"
+              className="btn p-10 pt-3 pb-3 md:w-full md:mt-12"
               data-aos="fade-right"
+              data-aos-delay="300"
             >
               Noteworthy Projects
-              <FaLongArrowAltRight className='ml-6 text-2xl' />
             </button>
           </Link>
         </div>

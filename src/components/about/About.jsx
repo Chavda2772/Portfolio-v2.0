@@ -28,7 +28,7 @@ function About() {
                             in JavaScript frameworks, .NET Core 8.0 and other emerging technologies.</span>
                     </div>
                     <a className='delay-200' href='/assets/resume.pdf' target='_blank'>
-                        <button className='bg-skin-secondary p-8 pt-3 pb-3 rounded-md text-skin-primary hover:bg-skin-secondary/80 active:scale-95 md:w-full md:mt-12' data-aos="fade-right" data-aos-delay="300">Resume</button>
+                        <button href="#about" className="btn p-10 pt-3 pb-3 md:w-full md:mt-12" data-aos="fade-right" data-aos-delay="300">Resume</button>
                     </a>
                 </div>
             </div>

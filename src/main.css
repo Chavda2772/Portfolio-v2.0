@@ -15,7 +15,7 @@
   }
 
   html.dark .theme-default {
-    --color-primary: 31, 34, 53;
+    --color-primary: 31, 35, 65;
     --color-secondary: 209, 214, 255;
     --color-action: 255, 75, 75;
   }
@@ -54,4 +54,22 @@ body {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(var(--color-action));
+}
+
+/* Button */
+.btn {  
+  border-radius: 100px;
+  color: rgb(var(--color-secondary));
+  border: 2px solid rgb(var(--color-action));
+  transition: all rgb(var(--color-secondary)) ease-in-out;
+  z-index: inherit;
+}
+
+.btn:hover {
+  background-color: rgb(var(--color-action));
+  cursor: pointer;
+}
+
+.btn:focus {
+  outline: none;
 }

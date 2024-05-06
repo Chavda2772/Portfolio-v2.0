@@ -101,7 +101,7 @@ function Navbar() {
     // Element
     return (
         <>
-            <nav className="fixed w-full backdrop-blur-xl bg-skin-secondary/35 rounded-b-xl z-20">
+            <nav className="fixed w-full backdrop-blur-xl bg-skin-secondary/5 rounded-b-xl z-20">
                 <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
                     <a
                         href='#'
