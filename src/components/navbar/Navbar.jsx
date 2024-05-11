@@ -37,7 +37,7 @@ function Navbar() {
                 }, { once: true });
             });
 
-            localStorage.mute = false;
+            localStorage.mute = true;
         }
     }, []);
 
@@ -105,6 +105,7 @@ function Navbar() {
                 <div className="max-w-full flex flex-wrap items-center justify-between mx-auto p-4">
                     <a
                         href='#'
+                        onClick={() => navigate('/')}
                         className="ml-8"
                         data-aos="fade-right"
                     >
@@ -193,7 +194,13 @@ function Navbar() {
                 </div>
                 <ul className="h-full flex flex-col items-center font-semibold caudex-regular-italic justify-evenly text-7xl">
                     <li>
-                        <a href="#" onClick={navigateItem} className="text-skin-secondary hover:text-skin-action" aria-current="page">Home</a>
+                        <a href="#"
+                            onClick={navigateItem}
+                            className="text-skin-secondary hover:text-skin-action"
+                            aria-current="page"
+                        >
+                            Home
+                        </a>
                     </li>
                     <li>
                         <a

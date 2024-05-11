@@ -49,7 +49,7 @@ function Skills() {
       <div className="absolute h-full w-full flex items-center opacity-5 overflow-hidden">
         <label className='text-[28rem] tracking-widest italic pt-20 font-ducados uppercase text-skin-secondary -ml-32 scroll-animation'>Skills</label>
       </div>
-      <div className="h-full bg-skin-secondary w-1 ml-16 sm:ml-8 absolute z-10"></div>
+      <div className="h-full bg-skin-secondary w-1 ml-16 pt-20 sm:ml-8 absolute z-10"></div>
       <a href='#skills' className='sticky italic sm:absolute sm:-left-8 top-20 w-max h-0 text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
         Skills
       </a>

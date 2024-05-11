@@ -25,6 +25,7 @@ function App() {
         // Animation
         AOS.init({
             duration: 1000,
+            once: true
         });
 
         // animation before end of element fix

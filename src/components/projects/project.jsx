@@ -14,7 +14,7 @@ function Project(project) {
 
   return (
     <div
-      className={`flex justify-center items-center w-3/5 h-2/4 m-14 relative bg-skin-secondary p-6 rounded-lg ${isInverse ? ' flex-row-reverse' : ''}`}
+      className={`flex justify-center items-center w-6/12 h-2/4 m-14 relative bg-skin-secondary p-6 rounded-lg ${isInverse ? ' flex-row-reverse' : ''}`}
       data-aos={`${isInverse ? 'fade-left' : 'fade-right'}`}
     >
       <h3 className={`absolute text-8xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-20 border-2 border-skin-secondary -right-12`}>
@@ -59,7 +59,9 @@ function Project(project) {
         </div>
       </div>
       <div className='w-1/2 h-full sm:hidden flex items-center'>
-        <img className='object-cover w-full rounded-md' src={project.imgSource} alt="" />
+        <a href={project.imgSource} target='_blank'>
+          <img className='object-cover w-full rounded-md' src={project.imgSource} alt="" />
+        </a>
       </div>
     </ div>
   );
