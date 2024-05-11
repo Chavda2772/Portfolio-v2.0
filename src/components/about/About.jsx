@@ -8,7 +8,7 @@ function About() {
                 <label className='text-[28rem] tracking-widest italic w-full font-ducados uppercase pt-20 text-skin-secondary scroll-animation'>About</label>
             </div>
             <div className="h-full bg-skin-secondary w-1 ml-16 sm:ml-8 absolute"></div>
-            <a href='#about' className='sticky italic sm:absolute sm:-left-8 top-20 w-max h-0 text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
+            <a href='#about' className='sticky pb-10 italic sm:absolute sm:-left-8 top-20 w-max h-0 text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
                 About
             </a>
             <div className="h-dvh w flex justify-center items-center relative z-10 md:flex-col">

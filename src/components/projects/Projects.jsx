@@ -1,7 +1,7 @@
 // import
 import './Projects.css'
 
-import Project from './project';
+import Project from './Project';
 import { Link } from "react-router-dom";
 
 function Projects() {
@@ -18,7 +18,7 @@ function Projects() {
     },
     {
       name: 'Chit Chat',
-      imgSource: '/images/Spyglass@2x.png',
+      imgSource: '/images/Chitchat.png',
       discription: 'A dynamic messaging app featuring real-time communication, user status indicators, Google login integration, and customizable themes for a personalized experience.',
       gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
       externalLink: 'https://chitchat.chavdamahesh.com',
@@ -26,7 +26,7 @@ function Projects() {
     },
     {
       name: 'Stash Note',
-      imgSource: '/images/Spyglass@2x.png',
+      imgSource: '/images/StashNote.png',
       discription: 'StashNote is a powerful todo list application designed for efficient task management. It offers a range of features to help you stay organized and on top of your tasks.',
       gitLink: 'https://github.com/Chavda2772/Stash-Note',
       externalLink: 'https://stashnote.chavdamahesh.com',
@@ -43,7 +43,7 @@ function Projects() {
       <a href='#projects' className='sticky italic md:absolute top-20 sm:-left-8 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
         Projects
       </a>
-      <div className="w-full min-h-full pt-24">
+      <div className="w-full min-h-full pt-34">
         {/* Projects */}
         <div className='flex flex-col items-center w-full' data-aos="fade-right">
           {
