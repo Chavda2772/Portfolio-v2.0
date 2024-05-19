@@ -110,7 +110,7 @@ function Navbar() {
                         data-aos="fade-right"
                     >
                         {/* Logo */}
-                        <svg className='fill-skin-secondary hover:fill-skin-action'
+                        <svg className='fill-skin-secondary hover:fill-skin-action animate-pulse'
                             height="40"
                             width="40"
                             xmlns="http://www.w3.org/2000/svg"
@@ -196,7 +196,7 @@ function Navbar() {
                     <li>
                         <a href="#"
                             onClick={navigateItem}
-                            className="text-skin-secondary hover:text-skin-action"
+                            className="text-skin-secondary dark:drop-shadow-textBorder hover:text-skin-action"
                             aria-current="page"
                         >
                             Home
@@ -204,7 +204,7 @@ function Navbar() {
                     </li>
                     <li>
                         <a
-                            className='text-skin-secondary hover:text-skin-action'
+                            className="text-skin-secondary dark:drop-shadow-textBorder hover:text-skin-action"
                             href='#about'
                             onClick={navigateItem}
                         >
@@ -212,13 +212,31 @@ function Navbar() {
                         </a>
                     </li>
                     <li>
-                        <a href="#skills" onClick={navigateItem} className="text-skin-secondary hover:text-skin-action">Skills</a>
+                        <a
+                            href="#skills"
+                            onClick={navigateItem}
+                            className="text-skin-secondary dark:drop-shadow-textBorder hover:text-skin-action"
+                        >
+                            Skills
+                        </a>
                     </li>
                     <li>
-                        <a href="#projects" onClick={navigateItem} className="text-skin-secondary hover:text-skin-action">Projects</a>
+                        <a
+                            href="#projects"
+                            onClick={navigateItem}
+                            className="text-skin-secondary dark:drop-shadow-textBorder hover:text-skin-action"
+                        >
+                            Projects
+                        </a>
                     </li>
                     <li className='mb-20'>
-                        <a href="#contact" onClick={navigateItem} className="text-skin-secondary hover:text-skin-action mb-10">Contact</a>
+                        <a
+                            href="#contact"
+                            onClick={navigateItem}
+                            className="text-skin-secondary dark:drop-shadow-textBorder hover:text-skin-action mb-10"
+                        >
+                            Contact
+                        </a>
                     </li>
                 </ul>
             </div>

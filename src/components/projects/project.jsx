@@ -44,19 +44,19 @@ function Project(project) {
         <div className={`flex pt-2 sm:justify-center ${isInverse ? 'pl-6 sm:pl-0' : ''}`}>
           {/* Github */}
           <a hidden={!project.gitLink} href={project.gitLink} target='_blank'>
-            <FaGithub className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+            <FaGithub className="text-2xl mr-3 text-skin-primary hover:text-skin-action" />
           </a>
           {/* Chrome */}
           <a hidden={!project.chromeLink} href={project.chromeLink} target='_blank'>
-            <FaChrome className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+            <FaChrome className="text-2xl mr-3 text-skin-primary hover:text-skin-action" />
           </a>
           {/* Edge */}
           <a hidden={!project.edgeLink} href={project.edgeLink} target='_blank'>
-            <FaEdge className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+            <FaEdge className="text-2xl mr-3 text-skin-primary hover:text-skin-action" />
           </a>
           {/* External */}
           <a hidden={!project.externalLink} href={project.externalLink} target='_blank'>
-            <RiExternalLinkFill className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+            <RiExternalLinkFill className="text-2xl mr-3 text-skin-primary hover:text-skin-action" />
           </a>
         </div>
       </div>

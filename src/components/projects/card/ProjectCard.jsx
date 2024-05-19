@@ -11,10 +11,10 @@ function ProjectCard(projectDetail) {
   if (id) projectCount = id.toString().padStart(2, "0")
   return (
     <div
-      className='flex justify-center items-center w-2/6 sm:w-5/6 m-14 mb-20 mt-20 relative bg-skin-secondary p-6 rounded-lg flex-row-reverse'
+      className='flex justify-center items-center w-3/12 sm:w-5/6 m-14 mb-20 mt-20 relative bg-skin-secondary p-6 rounded-lg flex-row-reverse'
       data-aos='fade-right'
     >
-      <h3 className='absolute text-8xl sm:text-6xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-20 sm:-top-10 border-2 border-skin-secondary -right-12 sm:-right-8'>
+      <h3 className='absolute text-6xl sm:text-6xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-12 sm:-top-10 border-2 border-skin-secondary -right-8'>
         {projectCount}
       </h3>
       <div className='w-full  h-full flex justify-center flex-col'>
@@ -23,7 +23,7 @@ function ProjectCard(projectDetail) {
         </h1>
         <div className='w-full h-full flex items-center relative projectcontent'>
           <img
-            className='object-contain h-full w-full rounded-md'
+            className='object-contain rounded-md'
             src={projectDetail.imgSource}
             alt="project-image" />
           <p
@@ -43,19 +43,19 @@ function ProjectCard(projectDetail) {
         <div className='flex pt-2 sm:justify-center'>
           {/* Github */}
           <a hidden={!projectDetail.gitLink} href={projectDetail.gitLink} target='_blank'>
-            <FaGithub className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+            <FaGithub className="text-2xl mr-3 text-skin-primary hover:text-skin-action" />
           </a>
           {/* Chrome */}
           <a hidden={!projectDetail.chromeLink} href={projectDetail.chromeLink} target='_blank'>
-            <FaChrome className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+            <FaChrome className="text-2xl mr-3 text-skin-primary hover:text-skin-action" />
           </a>
           {/* Edge */}
           <a hidden={!projectDetail.edgeLink} href={projectDetail.edgeLink} target='_blank'>
-            <FaEdge className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+            <FaEdge className="text-2xl mr-3 text-skin-primary hover:text-skin-action" />
           </a>
           {/* External */}
           <a hidden={!projectDetail.externalLink} href={projectDetail.externalLink} target='_blank'>
-            <RiExternalLinkFill className="text-xl mr-3 text-skin-primary hover:text-skin-action" />
+            <RiExternalLinkFill className="text-2xl mr-3 text-skin-primary hover:text-skin-action" />
           </a>
         </div>
       </div>

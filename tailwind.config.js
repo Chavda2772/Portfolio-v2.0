@@ -29,7 +29,10 @@ export default {
       borderWidth: {
         15: '15px',
         30: '30px',
-      }
+      },
+      dropShadow: {
+        textBorder: '0 2.2px 2.2px rgba(0,0,0,1)',
+      },
     },
     screens: {
       xl: { max: '1279px' },
