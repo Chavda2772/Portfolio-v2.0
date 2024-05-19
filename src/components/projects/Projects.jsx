@@ -20,7 +20,7 @@ function Projects() {
       name: 'Chit Chat',
       imgSource: '/images/Chitchat.png',
       discription: 'A dynamic messaging app featuring real-time communication, user status indicators, Google login integration, and customizable themes for a personalized experience.',
-      gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
+      gitLink: 'https://github.com/Chavda2772/ChitChat',
       externalLink: 'https://chitchat.chavdamahesh.com',
       techList: ['Vue JS', 'Node JS', 'Express JS', 'Firebase', 'Socket IO', 'MySql']
     },
@@ -30,7 +30,7 @@ function Projects() {
       discription: 'StashNote is a powerful todo list application designed for efficient task management. It offers a range of features to help you stay organized and on top of your tasks.',
       gitLink: 'https://github.com/Chavda2772/Stash-Note',
       externalLink: 'https://stashnote.chavdamahesh.com',
-      techList: ['Ext JS', 'Node JS', 'MySql']
+      techList: ['Ext JS', 'Node JS', 'Express JS', 'MySql']
     }
   ];
 
@@ -43,7 +43,7 @@ function Projects() {
       <a href='#projects' className='sticky italic md:absolute top-20 sm:-left-8 h-0 w-max text-skin-secondary before:inline-flex flex before:w-5 before:h-5 before:mr-6 before:mt-2 before:bg-skin-secondary before:rounded-full pl-16 p-3 text-3xl font-bold -ml-2 cursor-pointer z-[12] hover:text-skin-action'>
         Projects
       </a>
-      <div className="w-full min-h-full pt-34">
+      <div className="w-full pt-28">
         {/* Projects */}
         <div className='flex flex-col items-center w-full' data-aos="fade-right">
           {

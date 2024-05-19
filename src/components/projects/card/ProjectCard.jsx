@@ -11,10 +11,10 @@ function ProjectCard(projectDetail) {
   if (id) projectCount = id.toString().padStart(2, "0")
   return (
     <div
-      className='flex justify-center items-center w-2/6 m-14 mb-20 mt-20 relative bg-skin-secondary p-6 rounded-lg flex-row-reverse'
+      className='flex justify-center items-center w-2/6 sm:w-5/6 m-14 mb-20 mt-20 relative bg-skin-secondary p-6 rounded-lg flex-row-reverse'
       data-aos='fade-right'
     >
-      <h3 className='absolute text-8xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-20 border-2 border-skin-secondary -right-12'>
+      <h3 className='absolute text-8xl sm:text-6xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-20 sm:-top-10 border-2 border-skin-secondary -right-12 sm:-right-8'>
         {projectCount}
       </h3>
       <div className='w-full  h-full flex justify-center flex-col'>

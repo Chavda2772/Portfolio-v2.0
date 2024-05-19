@@ -14,10 +14,10 @@ function Project(project) {
 
   return (
     <div
-      className={`flex justify-center items-center w-6/12 h-2/4 m-14 relative bg-skin-secondary p-6 rounded-lg ${isInverse ? ' flex-row-reverse' : ''}`}
+      className={`flex justify-center items-center w-1/2 sm:w-4/6 h-1/2 m-14 relative bg-skin-secondary p-6 rounded-lg ${isInverse ? ' flex-row-reverse' : ''}`}
       data-aos={`${isInverse ? 'fade-left' : 'fade-right'}`}
     >
-      <h3 className={`absolute text-8xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-20 border-2 border-skin-secondary -right-12`}>
+      <h3 className={`absolute text-8xl sm:text-6xl font-bold text-skin-secondary backdrop-blur-md bg-skin-primary/30 p-5 rounded-md -top-20 sm:-top-10 border-2 border-skin-secondary -right-12 sm:-right-8`}>
         {projectCount}
       </h3>
       <div className='w-1/2 sm:w-full h-full flex justify-center flex-col'>
@@ -25,10 +25,12 @@ function Project(project) {
           {name}
         </h1>
         <div className='w-1/2 sm:w-full h-full sm:h-1/2 hidden sm:block'>
-          <img className='object-cover w-full rounded-md' src={project.imgSource} alt="" />
+          <a href={project.imgSource} target='_blank'>
+            <img className='object-cover w-full rounded-t-md' src={project.imgSource} alt="" />
+          </a>
         </div>
         <div>
-          <p className={`bg-skin-primary text-skin-secondary p-3 min-h-28 flex items-center sm:text-center sm:font-semibold`}>
+          <p className='bg-skin-primary text-skin-secondary p-3 min-h-28 flex items-center sm:text-center sm:font-semibold sm:rounded-b-md'>
             {discription}
           </p>
         </div>
