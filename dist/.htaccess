@@ -1,9 +1,7 @@
 RewriteEngine on
   
-RewriteCond %{HTTP_HOST} ^(www.)?.chavdamahesh.com$
-RewriteCond %{REQUEST_URI} !^/
+RewriteBase /
+RewriteCond %{REQUEST_URI} !^/(assets/?|$)
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule ^(.*)$ /$1
-RewriteCond %{HTTP_HOST} ^(www.)?chavdamahesh.com$
-RewriteRule ^(/)?$ /index.html [L]
+RewriteRule . /index.html [L]
