@@ -28,7 +28,7 @@ function ProjectCard(projectDetail) {
             alt="project-image" />
           <p
             id='project-description'
-            className='absolute bg-skin-primary/95 h-full text-skin-secondary flex items-center text-center text-xl p-8 rounded-md opacity-0 hover:opacity-100'
+            className='absolute bg-skin-primary/95 h-full w-full text-skin-secondary flex items-center justify-center text-center text-xl p-8 rounded-md opacity-0 hover:opacity-100'
           >
             {discription}
           </p>

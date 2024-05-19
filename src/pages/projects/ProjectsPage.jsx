@@ -5,33 +5,112 @@ import Footer from '../../components/footer/Footer';
 import { useEffect } from "react";
 
 function ProjectsPage() {
+  let baseUrl = 'https://project.chavdamahesh.com/';
   let projectList = [
     {
-      name: 'Spyglass',
-      imgSource: '/images/SpyglassFilter.png',
-      gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
-      chromeLink: 'https://chromewebstore.google.com/detail/lnoocafdflgdbjjhcpkajhjchmddhgoh',
-      edgeLink: 'https://microsoftedge.microsoft.com/addons/detail/extjs-spyglass/gmnhihnnhiighhgbjlbnfbeehbgeigjn',
-      externalLink: '',
-      discription: 'Empower Sencha Ext JS developers with the ExtJS Spyglass Chrome extension. Easily inspect and debug Ext JS applications, navigate component hierarchies, modify.',
-      techList: ['Ext JS', 'JavaScript']
+      name: 'Portfolio v1',
+      imgSource: '/images/Projects/Portfolio_v1.png',
+      gitLink: 'https://github.com/Chavda2772/portfolio',
+      externalLink: 'https://v1.chavdamahesh.com',
+      discription: 'Portfolio V1',
+      techList: ['Html', 'Scss', 'JavaScript']
     },
     {
-      name: 'Chit Chat',
-      imgSource: '/images/Chitchat.png',
-      discription: 'A dynamic messaging app featuring real-time communication, user status indicators, Google login integration, and customizable themes for a personalized experience.',
-      gitLink: 'https://github.com/Chavda2772/ExtJs-Spyglass-Extension',
-      externalLink: 'https://chitchat.chavdamahesh.com/home',
-      techList: ['Vue JS', 'Node JS', 'Firebase', 'Socket IO', 'MySql']
+      name: 'Navigation menu',
+      imgSource: '/images/Projects/navtigationMenu.png',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/navigationMenu',
+      externalLink: baseUrl + 'navigationMenu/',
+      discription: 'Navigation Menu with collapsible feature.',
+      techList: ['Html', 'Css', 'JavaScript']
     },
     {
-      name: 'Stash Note',
-      imgSource: '/images/StashNote.png',
-      discription: 'StashNote is a powerful todo list application designed for efficient task management. It offers a range of features to help you stay organized and on top of your tasks.',
-      gitLink: 'https://github.com/Chavda2772/Stash-Note',
-      externalLink: 'https://stashnote.chavdamahesh.com',
-      techList: ['Ext JS', 'Node JS', 'MySql']
-    }
+      name: 'Clock',
+      imgSource: '/images/Projects/Modern_Clock.png',
+      discription: 'Analog realtime clock with Dark and light mode.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/clock',
+      externalLink: baseUrl + 'clock/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Progress step',
+      imgSource: '/images/Projects/Step_Progress_bar-min.jpeg',
+      discription: 'Progress bar with steps. Can add multiple steps and remove them.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/progressStep',
+      externalLink: baseUrl + 'progressStep/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Split Landing',
+      imgSource: '/images/Projects/Split_landing.png',
+      discription: 'Split landing page.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/landingPage',
+      externalLink: baseUrl + 'splitLandingPage/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Card Expanding',
+      imgSource: '/images/Projects/Expanding_cards.png',
+      discription: 'Exapand card on click. Random images on every refresh and Project is also responsive.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/cardExpanding',
+      externalLink: baseUrl + 'cardExpanding/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Random Images',
+      imgSource: '/images/Projects/downloadRandomImages.jpg',
+      discription: 'Random Images grid to download.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/downloadRandomImage',
+      externalLink: baseUrl + 'downloadRandomImage/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Login Form',
+      imgSource: '/images/Projects/mordenInputForm.png',
+      discription: 'Simple login form with morden input field.Label moves to top if input field on focus.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/mordenInputForm',
+      externalLink: baseUrl + 'mordenInputForm/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Scroll Animation',
+      imgSource: '/images/Projects/Scroll_animate.png',
+      discription: 'Reveals elements as you scroll down the page.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/scrollAnimation',
+      externalLink: baseUrl + 'scrollAnimation/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Simple Todo',
+      imgSource: '/images/Projects/Simple_todo.png',
+      discription: 'Todo list with browser Local storage. Your data is there until you manually delete.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/todoList',
+      externalLink: baseUrl + 'todoList/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Cards Design',
+      imgSource: '/images/Projects/Card_layout.png',
+      discription: 'Displays a card layout that reveals extra details on hover.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/cardLayout',
+      externalLink: baseUrl + 'cardLayout/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Search widget',
+      imgSource: '/images/Projects/Search_widget.png',
+      discription: 'click on search button and widget is visible.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/hiddenSearchWidget',
+      externalLink: baseUrl + 'hiddenSearchWidget/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
+    {
+      name: 'Sound board',
+      imgSource: '/images/Projects/Sound_board.png',
+      discription: 'A mini project showcasing a clickable list of sound effects for easy playback.',
+      gitLink: 'https://github.com/Chavda2772/Mini-Projects/tree/master/soundBoard',
+      externalLink: baseUrl + 'soundBoard/',
+      techList: ['Html', 'Css', 'JavaScript']
+    },
   ];
 
   useEffect(() => {
