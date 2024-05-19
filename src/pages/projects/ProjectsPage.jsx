@@ -1,6 +1,6 @@
-// import Card from '../../components/projects/card/Card';
-import Project from '../../components/projects/Project';
+import ProjectCard from '../../components/projects/card/ProjectCard';
 import Navbar from '../../components/navbar/Navbar';
+import Footer from '../../components/footer/Footer';
 
 import { useEffect } from "react";
 
@@ -40,16 +40,16 @@ function ProjectsPage() {
   return (
     <>
       <Navbar />
-      <div className="w-full min-h-full bg-skin-primary pt-28">
+      <div className="w-full h-full bg-skin-primary pt-28">
         {/* Projects */}
         <div
           className='w-full flex justify-center flex-wrap'
           data-aos="fade-right"
           data-aos-once="true"
-          >
+        >
           {
             projectList.map((project, idx) => {
-              return <Project
+              return <ProjectCard
                 key={idx}
                 id={idx + 1}
                 isInverse={idx % 2 == 1}
@@ -66,6 +66,7 @@ function ProjectsPage() {
           }
         </div>
       </div>
+      <Footer />
     </>
   )
 }

@@ -52,14 +52,11 @@ function Home() {
         {/* Image */}
         <div className='relative w-1/2 md:w-full h-full md:h-4/6 sm:mt-20 flex justify-end md:justify-end items-center md:items-center flex-col overflow-hidden'>
           <img
-            className='w-3/5 md:w-2/3 drop-shadow-custom'
+            className='w-3/5 md:w-2/3 drop-shadow-custom select-none'
             src="/images/ProfessionalPhoto@2x.png"
             alt="logo" />
           <div className='absolute h-3/6 w-3/5 bg-shadow-custom md:w-5/6'></div>
         </div>
-
-        {/* image in div backup */}
-        {/* <div className='w-1/2 md:w-full h-full md:h-1/2 homepage-photo'></div> */}
       </div>
     </div>
   );
