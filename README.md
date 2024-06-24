@@ -12,8 +12,8 @@ How to clone and run project on your local machine.
 1. Clone the repository from GitHub:
 
    ```command
-   git clone <repository-url>
-   cd <repository-name>
+   git clone https://github.com/Chavda2772/Portfolio-v2.0.git
+   cd Portfolio_v2
    ```
 
 2. Install dependencies:
@@ -48,47 +48,23 @@ The project structure is organized as follows:
 
 ```
 Portfolio_v2/
-│
-├── public/              # Public assets and index.html
-├── src/                 # Source files
-│   ├── components/      # React components
-│   ├── pages/           # Page components (e.g., Home, Projects)
-│   ├── styles/          # CSS or styling files
-│   ├── App.js           # Main component
-│   ├── index.js         # Entry point
-│   └── ...              # Other configuration and utility files
-├── README.md            # This file
-├── package.json         # npm package configuration
+├─── public/             # Public assets
+├─── resource/           # Development resource
+├─── src/                # Source files
+|    ├─── components/    # React components
+|    ├─── pages/         # Page components (e.g., MainView, Projects)
+|    ├─── theme/         # Application theme css files
+|    ├─ App.css          # Style files
+|    ├─ App.jsx          # React Application file
+|    ├─ main.css         # Style files
+|    └─ main.jsx         # React Main component file
+|    
+├─ index.html            # Entry point
+├─ package.json          # npm package configuration
+├─ postcss.config.js     # post css configuration file
+├─ tailwind.config.js    # Tailwind configuration file
+├─ vite.config.js        # Vite configuration file
 └── ...                  # Other project configuration files
-
-Portfolio_v2/
-├─── public              # Public assets
-│    ├───assets
-│    └───images
-│
-├─── resource
-│
-└─── src
-|    │  App.css
-|    │  App.jsx
-|    │  main.css
-|    │  main.jsx
-|    │
-|    ├─── components
-|    ├─── pages
-|    └─── theme
-│   .eslintrc.cjs
-│   .gitignore
-│   index.html
-│   package-lock.json
-│   package.json
-│   postcss.config.js
-│   README copy.md
-│   README.md
-│   stru
-│   stru.txt
-│   tailwind.config.js
-│   vite.config.js
 ```
 
 ### Prerequisites
@@ -96,7 +72,7 @@ Portfolio_v2/
  - NPM
 
 ## License
-This project is licensed under the [License Name] - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the [License Name] - see the [LICENSE](LICENSE.md) file for details.
 
-## Demo
- [Live Preview](www.chavdamahesh.com)
+## Live Preview
+ [Preview](https://www.chavdamahesh.com/)
