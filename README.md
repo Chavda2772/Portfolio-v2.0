@@ -11,8 +11,10 @@ How to clone and run project on your local machine.
 
 1. Clone the repository from GitHub:
 
-   ```command
+   ```bash
    git clone https://github.com/Chavda2772/Portfolio-v2.0.git
+   ```
+   ```bash
    cd Portfolio_v2
    ```
 
@@ -70,9 +72,6 @@ Portfolio_v2/
 ### Prerequisites
  - Node JS
  - NPM
-
-## License
-This project is licensed under the [License Name] - see the [LICENSE](LICENSE.md) file for details.
 
 ## Live Preview
  [Preview](https://www.chavdamahesh.com/)
