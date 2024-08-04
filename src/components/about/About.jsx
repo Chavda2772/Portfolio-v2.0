@@ -25,7 +25,7 @@ function About() {
                         <span className='text-skin-secondary text-lg sm:font-semibold'>I am Mahesh Chavda, holding a Bachelor of Technology (B.Tech) degree
                             from RK University, India, and currently employed as a senior software engineer at
                             Knovos India Pvt. Ltd. Based in India, I am dedicated to upgrading my skills
-                            in JavaScript frameworks, .NET Core 8.0 and other emerging technologies.</span>
+                            in JavaScript frameworks and other emerging technologies.</span>
                     </div>
                     <a className='delay-200' href='/assets/resume.pdf' target='_blank'>
                         <button href="#about" className="btn p-10 pt-3 pb-3 md:w-full md:mt-12" data-aos="fade-right" data-aos-delay="300">Resume</button>
