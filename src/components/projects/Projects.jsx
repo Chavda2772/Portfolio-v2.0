@@ -25,6 +25,14 @@ function Projects() {
       techList: ['Vue JS', 'Node JS', 'Express JS', 'Firebase', 'Socket IO', 'MySql']
     },
     {
+      name: 'IdeaNest',
+      imgSource: '/images/IdeaNest.png',
+      discription: 'IdeaNest is an intuitive application designed to organize ideas, links, and notes in one place, with features like link previews and folder organization. making it a versatile tool for managing resources efficiently.',
+      gitLink: 'https://github.com/Chavda2772/IdeaNest',
+      externalLink: 'https://ideanest.chavdamahesh.com',
+      techList: ['Angular', 'Tailwind', 'Node JS', 'Express JS', 'MySql']
+    },
+    {
       name: 'Stash Note',
       imgSource: '/images/StashNote.png',
       discription: 'StashNote is a powerful todo list application designed for efficient task management. It offers a range of features to help you stay organized and on top of your tasks.',
