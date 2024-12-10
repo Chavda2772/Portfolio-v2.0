@@ -1,5 +1,12 @@
+on:
+  push:
+    branches:
+      - master
+
+name: checking GitHub secret
 jobs:
-  example-job:
+  web-deploy:
+    name: Deploy
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
