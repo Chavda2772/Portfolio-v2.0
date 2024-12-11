@@ -8,6 +8,7 @@ jobs:
   web-deploy:
     name: 🎉 Deploy
     runs-on: ubuntu-latest
+    environment: Personal
     steps:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
@@ -16,7 +17,7 @@ jobs:
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
           server:  ftp.chavdamahesh.com
-          username: ${{ secrets.ftp_username }}
-          password: ${{ secrets.ftp_password }}
+          username: ${{ env.ftp_username }}
+          password: ${{ env.ftp_password }}
           local-dir: ./dist/
           server-dir: /public_html/
