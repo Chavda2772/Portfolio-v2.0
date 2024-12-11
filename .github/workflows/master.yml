@@ -13,12 +13,6 @@ jobs:
       - name: 🚚 Get latest code
         uses: actions/checkout@v2
 
-      - name: Print environment USERNAME variable 
-        run: echo ${{ secrets.FTP_USERNAME }}
-
-      - name: Print environment PASSWORD variable 
-        run: echo ${{ secrets.FTP_PASSWORD }}
-
       - name: 📂 Sync files
         uses: SamKirkland/FTP-Deploy-Action@4.3.2
         with:
